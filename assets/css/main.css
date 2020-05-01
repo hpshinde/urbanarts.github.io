@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
-@import url("fonts.googleapis.com/css2?family=Exo+2|Trocchi");
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,700;1,500&display=swap');
 
 /*
 	Urban by TEMPLATED
@@ -1590,7 +1590,7 @@
 	}
 
 	body, input, select, textarea {
-		font-family: "Exo 2", sans-serif;
+		font-family: "Exo 2", serif;
 		font-size: 13pt;
 		font-weight: 300;
 		line-height: 1.65;
@@ -1650,6 +1650,7 @@
 
 	em, i {
 		font-style: italic;
+		font-weight: 500;
 	}
 
 	p {
@@ -1747,6 +1748,7 @@
 	blockquote {
 		border-left: solid 4px;
 		font-style: italic;
+		font-weight: 500;
 		margin: 0 0 2em 0;
 		padding: 0.5em 0 0.5em 2em;
 	}
