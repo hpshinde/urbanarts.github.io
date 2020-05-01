@@ -3452,7 +3452,8 @@
 			#header > .logo span {
 				font-family: 'Barlow Condensed', sans-serif;
 				font-weight: 700;
-				/* font-size: .8em; */
+				text-transform: uppercase;
+				font-size: .8em;
 				color: #FFF;
 			}
 
