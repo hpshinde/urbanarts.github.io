@@ -1962,7 +1962,7 @@
 	input[type="button"],
 	button,
 	.button {
-		background-color: #dbdb33;
+		background-color: #FEDC56;
 		color: #fff !important;
 	}
 
@@ -2941,7 +2941,7 @@
 			.wrapper.style1 input[type="button"],
 			.wrapper.style1 button,
 			.wrapper.style1 .button {
-				background-color: #dbdb33
+				background-color: #FEDC56
 	;
 				color: #fff !important;
 			}
@@ -3108,9 +3108,9 @@
 			}
 
 		.wrapper.style2 {
-			background-color: #dbdb33
+			background-color: #FEDC56
 ;
-			color: #aed6f1;
+			color: #fee580;
 		}
 
 			.wrapper.style2 input, .wrapper.style2 select, .wrapper.style2 textarea {
@@ -3156,7 +3156,7 @@
 			.wrapper.style2 button,
 			.wrapper.style2 .button {
 				background-color: #fff;
-				color: #dbdb33
+				color: #FEDC56
 	 !important;
 			}
 
@@ -3191,7 +3191,7 @@
 					.wrapper.style2 input[type="button"].alt.icon:before,
 					.wrapper.style2 button.alt.icon:before,
 					.wrapper.style2 .button.alt.icon:before {
-						color: #67b2e4;
+						color: #FEDC56;
 					}
 
 				.wrapper.style2 input[type="submit"].special,
@@ -3247,7 +3247,7 @@
 
 			.wrapper.style2 input[type="checkbox"] + label,
 			.wrapper.style2 input[type="radio"] + label {
-				color: #aed6f1;
+				color: #fee580;
 			}
 
 				.wrapper.style2 input[type="checkbox"] + label:before,
@@ -3270,23 +3270,23 @@
 			}
 
 			.wrapper.style2 ::-webkit-input-placeholder {
-				color: #67b2e4 !important;
+				color: #FEDC56 !important;
 			}
 
 			.wrapper.style2 :-moz-placeholder {
-				color: #67b2e4 !important;
+				color: #FEDC56 !important;
 			}
 
 			.wrapper.style2 ::-moz-placeholder {
-				color: #67b2e4 !important;
+				color: #FEDC56 !important;
 			}
 
 			.wrapper.style2 :-ms-input-placeholder {
-				color: #67b2e4 !important;
+				color: #FEDC56 !important;
 			}
 
 			.wrapper.style2 .formerize-placeholder {
-				color: #67b2e4 !important;
+				color: #FEDC56 !important;
 			}
 
 			.wrapper.style2 ul.alt li {
@@ -3294,7 +3294,7 @@
 			}
 
 			.wrapper.style2 header p {
-				color: #67b2e4;
+				color: #FEDC56;
 			}
 
 			.wrapper.style2 table tbody tr {
@@ -3322,7 +3322,7 @@
 			}
 
 			.wrapper.style2 .image {
-				box-shadow: 0px 0px 0px 7px #dbdb33
+				box-shadow: 0px 0px 0px 7px #FEDC56
 	, 0px 0px 0px 8px rgba(255, 255, 255, 0.25);
 			}
 
@@ -3406,7 +3406,7 @@
 
 	#header {
 		background: rgba(0, 0, 0, 0.75);
-		color: #aed6f1;
+		color: #fee580;
 		cursor: default;
 		height: 3.25em;
 		left: 0;
@@ -3431,12 +3431,12 @@
 
 			#header > .logo a {
 				font-size: 1.25em;
-				color: #dbdb33
+				color: #FEDC56
 	;
 			}
 
 				#header > .logo a:hover {
-					color: #dbdb33
+					color: #fecb01
 		;
 				}
 
@@ -3459,7 +3459,7 @@
 		}
 
 			#header > a:hover {
-				color: #dbdb33
+				color: #FEDC56
 	;
 			}
 
@@ -3620,7 +3620,7 @@
 					}
 
 					#menu > ul.links > li:hover {
-						color: #dbdb33
+						color: #FEDC56
 			;
 					}
 
@@ -3665,7 +3665,7 @@
 			}
 
 			#menu .close:hover {
-				color: #dbdb33
+				color: #FEDC56
 	;
 			}
 
