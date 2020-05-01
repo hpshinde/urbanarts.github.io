@@ -1971,7 +1971,7 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #3498db;
+			background-color: #FECB;
 		}
 
 		input[type="submit"]:active,
@@ -1979,7 +1979,7 @@
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: #c3c322;
+			background-color: #CBA3;
 		}
 
 		input[type="submit"].alt,
@@ -2765,7 +2765,7 @@
 			}
 
 			ul.tab-list li a:hover {
-				background: #693dcc;
+				background: #45258d;
 				color: #fff !important;
 			}
 
@@ -2951,7 +2951,7 @@
 				.wrapper.style1 input[type="button"]:hover,
 				.wrapper.style1 button:hover,
 				.wrapper.style1 .button:hover {
-					background-color: #3498db;
+					background-color: #FECB01;
 				}
 
 				.wrapper.style1 input[type="submit"]:active,
@@ -2959,7 +2959,7 @@
 				.wrapper.style1 input[type="button"]:active,
 				.wrapper.style1 button:active,
 				.wrapper.style1 .button:active {
-					background-color: #c3c322;
+					background-color: #CBA301;
 				}
 
 				.wrapper.style1 input[type="submit"].alt,
@@ -3110,7 +3110,7 @@
 		.wrapper.style2 {
 			background-color: #FEDC56
 ;
-			color: #fee580;
+			color: #856a00;
 		}
 
 			.wrapper.style2 input, .wrapper.style2 select, .wrapper.style2 textarea {
@@ -3436,7 +3436,7 @@
 			}
 
 				#header > .logo a:hover {
-					color: #fecb01
+					color: #FECB01
 		;
 				}
 
