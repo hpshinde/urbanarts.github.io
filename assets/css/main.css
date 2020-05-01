@@ -89,7 +89,7 @@
 	@media screen and (max-width: 1680px) {
 
 		.container.\31 25\25 {
-			width: 100%;
+			width: 98%;
 			max-width: 100em;
 			min-width: 80em;
 		}
@@ -115,7 +115,7 @@
 	@media screen and (max-width: 1280px) {
 
 		.container.\31 25\25 {
-			width: 100%;
+			width: 98%;
 			max-width: 81.25em;
 			min-width: 65em;
 		}
@@ -141,7 +141,7 @@
 	@media screen and (max-width: 980px) {
 
 		.container.\31 25\25 {
-			width: 100%;
+			width: 98%;
 			max-width: 112.5%;
 			min-width: 90%;
 		}
