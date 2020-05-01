@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
-@import url('https://fonts.googleapis.com/css2?family=Barlow Semi+Semi+Condensed:wght@700&family=Exo+2:ital,wght@0,300;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Exo+2:ital,wght@0,300;0,700;1,500&display=swap');
 
 /*
 	Urban by TEMPLATED
@@ -1591,7 +1591,7 @@
 
 	body, input, select, textarea {
 		font-family: "Exo 2", sans-serif;
-		font-size: 13pt;
+		font-size: 15pt;
 		font-weight: 300;
 		line-height: 1.65;
 	}
@@ -1599,7 +1599,7 @@
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 15pt;
 			}
 
 		}
@@ -1607,7 +1607,7 @@
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 14pt;
 			}
 
 		}
@@ -1615,7 +1615,7 @@
 		@media screen and (max-width: 980px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 13pt;
 			}
 
 		}
@@ -1623,7 +1623,7 @@
 		@media screen and (max-width: 736px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 13pt;
 			}
 
 		}
@@ -1631,7 +1631,7 @@
 		@media screen and (max-width: 480px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 13pt;
 			}
 
 		}
@@ -1658,7 +1658,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: 'Barlow Semi Condensed', sans-serif;
+		font-family: 'Barlow Condensed', sans-serif;
 		font-weight: 700;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
@@ -1880,8 +1880,9 @@
 		border: 0;
 		cursor: pointer;
 		display: inline-block;
-		font-family: 'Barlow Semi Condensed', sans-serif;
+		font-family: 'Barlow Condensed', sans-serif;
 		font-weight: 700;
+		text-transform: uppercase;
 		height: 2.85em;
 		line-height: 2.95em;
 		padding: 0 1.5em;
@@ -1921,7 +1922,7 @@
 		input[type="button"].small,
 		button.small,
 		.button.small {
-			font-size: 0.8em;
+			font-size: 0.95em;
 		}
 
 		input[type="submit"].big,
@@ -2207,8 +2208,9 @@
 
 	label {
 		display: block;
-		font-size: 0.9em;
-		font-family: 'Barlow Semi Condensed', sans-serif;
+		font-size: 0.95em;
+		font-family: 'Barlow Condensed', sans-serif;
+		text-transform: uppercase;
 		font-weight: 700;
 		margin: 0 0 1em 0;
 	}
@@ -2809,7 +2811,7 @@
 		}
 
 		table th {
-			font-size: 0.9em;
+			font-size: 0.95em;
 			font-weight: 700;
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;
@@ -3412,7 +3414,7 @@
 	#header {
 		background: rgba(0, 0, 0, 0.75);
 		color: #fee580;
-		font-family: 'Barlow Semi Condensed', sans-serif;
+		font-family: 'Barlow Condensed', sans-serif;
 		font-weight: 700;
 		cursor: default;
 		height: 3.25em;
@@ -3437,7 +3439,7 @@
 		}
 
 			#header > .logo a {
-				font-size: 1.25em;
+				font-size: 1.35em;
 				color: #FEDC56
 	;
 			}
@@ -3448,7 +3450,7 @@
 				}
 
 			#header > .logo span {
-				font-family: 'Barlow Semi Condensed', sans-serif;
+				font-family: 'Barlow Condensed', sans-serif;
 				font-weight: 700;
 				/* font-size: .8em; */
 				color: #FFF;
@@ -3892,7 +3894,7 @@
 
 		#footer .copyright {
 			color: #bfbfbf;
-			font-size: 0.9em;
+			font-size: 0.7em;
 			margin: 0 0 2em 0;
 			padding: 0;
 			text-align: center;
