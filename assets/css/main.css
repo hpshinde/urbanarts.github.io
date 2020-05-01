@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Exo+2:ital,wght@0,300;0,700;1,500&display=swap');
 
 /*
 	Urban by TEMPLATED
@@ -1590,7 +1590,7 @@
 	}
 
 	body, input, select, textarea {
-		font-family: "Exo 2", serif;
+		font-family: "Exo 2", sans-serif;
 		font-size: 13pt;
 		font-weight: 300;
 		line-height: 1.65;
@@ -1658,6 +1658,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Barlow Condensed', sans-serif;
 		font-weight: 700;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
@@ -1879,6 +1880,7 @@
 		border: 0;
 		cursor: pointer;
 		display: inline-block;
+		font-family: 'Barlow Condensed', sans-serif;
 		font-weight: 700;
 		height: 2.85em;
 		line-height: 2.95em;
@@ -2206,6 +2208,7 @@
 	label {
 		display: block;
 		font-size: 0.9em;
+		font-family: 'Barlow Condensed', sans-serif;
 		font-weight: 700;
 		margin: 0 0 1em 0;
 	}
@@ -3409,6 +3412,8 @@
 	#header {
 		background: rgba(0, 0, 0, 0.75);
 		color: #fee580;
+		font-family: 'Barlow Condensed', sans-serif;
+		font-weight: 700;
 		cursor: default;
 		height: 3.25em;
 		left: 0;
@@ -3443,8 +3448,9 @@
 				}
 
 			#header > .logo span {
-				font-weight: 300;
-				font-size: .8em;
+				font-family: 'Barlow Condensed', sans-serif;
+				font-weight: 700;
+				/* font-size: .8em; */
 				color: #FFF;
 			}
 
