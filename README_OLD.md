@@ -1,1 +1,0 @@
-# hpshinde.github.io
