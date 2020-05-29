@@ -1545,15 +1545,6 @@ a:hover, a:focus {
   color: var(--color-accent-primary-3);
 }
 
-.figure-member__dividerline:before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: var(--color-accent-secondary-2);
-  margin-bottom: 1em;
-}
-
 @media screen and (min-width: 320px) {
   .figure-member__position {
     font-size: calc(var(--subheading-min-font-size) * 1px + (var(--subheading-max-font-size) - var(--subheading-min-font-size)) * ((100vw - 320px) / 1600));
@@ -4778,7 +4769,6 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     margin-top: 1em;
     text-align: center;
     width: 100%;
-    color: var(--color-accent-primary-1);
   }
 }
 
@@ -5309,10 +5299,6 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
 .section_pb-xsmall {
   padding-bottom: calc(var(--distance-min-xsmall) * 1px);
-}
-
-.section_pb-xxsmall {
-  padding-bottom: calc(var(--distance-min-xsmall) * 0.5px);
 }
 
 @media screen and (min-width: 320px) {
@@ -8753,7 +8739,7 @@ cite:before {
   content: '';
   display: block;
   width: 100%;
-  height: 1px;
+  height: 2px;
   background-color: var(--color-accent-secondary-2);
   margin-bottom: 0.5em;
 }
