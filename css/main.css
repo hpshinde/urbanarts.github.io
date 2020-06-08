@@ -8509,9 +8509,9 @@ blockquote {
   font-size: calc(var(--blockquote-min-font-size) * 1px);
   line-height: var(--blockquote-line-height);
   font-style: italic;
-  padding: 3em;
+  padding: 1em;
   margin-top: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 @media screen and (min-width: 320px) {
@@ -9138,3 +9138,19 @@ cite:before {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+
+/* ======================================================================== */
+/* 110. UA's Customisations */
+/* ======================================================================== */
+
+blockquote:before {
+  color: #ccc;
+  content: "\259B";
+  font-size: 2em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+  display: inline;
+  position: absolute;
+  left: -15px;
+}
