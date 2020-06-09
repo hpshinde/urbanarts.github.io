@@ -4770,6 +4770,10 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     margin-top: 1em;
     text-align: center;
     width: 100%;
+    letter-spacing: 1px; /* ADDED BY HS */
+    color: #cccccc; /* ADDED BY HS */
+    text-transform: uppercase; /* ADDED BY HS */
+    font-size: calc(var(--subheading-min-font-size) * 1px); /* ADDED BY HS */
   }
 }
 
@@ -6121,6 +6125,10 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   display: inline-block;
   font-weight: bold;
   margin-top: 1em;
+  letter-spacing: 1px; /* ADDED BY HS */
+  color: #CCCCCC; /* ADDED BY HS */
+  text-transform: uppercase; /* ADDED BY HS */
+  font-size: calc(var(--subheading-min-font-size) * 1px); /* ADDED BY HS */
 }
 
 .section-image__caption-vertical-left {
@@ -7879,6 +7887,10 @@ select {
 .slider-images__caption {
   font-weight: bold;
   width: 100%;
+  letter-spacing: 1px; /* ADDED BY HS */
+  color: #888888; /* ADDED BY HS */
+  text-transform: uppercase; /* ADDED BY HS */
+  font-size: calc(var(--subheading-min-font-size) * 1px); /* ADDED BY HS */
 }
 
 .slider-images__slider-captions {
