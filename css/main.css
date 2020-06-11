@@ -8503,7 +8503,7 @@ small {
 
 blockquote {
   display: block;
-  background-color: #f7f5f0;
+  /* background-color: #f7f5f0; */
   color: var(--color-accent-secondary-2);
   font-family: var(--font-secondary);
   font-size: calc(var(--blockquote-min-font-size) * 1px);
