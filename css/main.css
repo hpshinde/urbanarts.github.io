@@ -1253,19 +1253,19 @@ a:hover, a:focus {
   font-family: var(--font-primary);
   font-weight: 100;
   line-height: 1;
-  font-size: calc(42 * 1px);
+  font-size: calc(21 * 1px);
   color: var(--color-accent-primary-1);
 }
 
 @media screen and (min-width: 320px) {
   .figure-award__year {
-    font-size: calc(42 * 1px + (65 - 42) * ((100vw - 320px) / 1600));
+    font-size: calc(21 * 1px + (32 - 21) * ((100vw - 320px) / 1600));
   }
 }
 
 @media screen and (min-width: 1920px) {
   .figure-award__year {
-    font-size: calc(65 * 1px);
+    font-size: calc(32 * 1px);
   }
 }
 
@@ -1287,7 +1287,7 @@ a:hover, a:focus {
 
 @media screen and (max-width: 576px) {
   .figure-award__year {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 }
 
