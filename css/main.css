@@ -6281,7 +6281,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
 .section-nav-projects__heading {
   font-family: var(--font-secondary);
-  font-size: calc(34 * 1px);
+  font-size: calc(34 * 1px); /* Was (34 * 1px); Added by HS */
   font-weight: bold;
   line-height: 1.28;
   margin-bottom: 0.25em;
@@ -6289,13 +6289,13 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
 @media screen and (min-width: 320px) {
   .section-nav-projects__heading {
-    font-size: calc(34 * 1px + (52 - 34) * ((100vw - 320px) / 1600));
+    font-size: calc(34 * 1px + (48 - 34) * ((100vw - 320px) / 1600)); /* Was calc(34 * 1px + (52 - 34)  - Added by HS */
   }
 }
 
 @media screen and (min-width: 1920px) {
   .section-nav-projects__heading {
-    font-size: calc(52 * 1px);
+    font-size: calc(48 * 1px); /* Was (52 * 1px) - Added by HS */
   }
 }
 
