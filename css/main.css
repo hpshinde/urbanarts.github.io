@@ -8470,8 +8470,8 @@ small {
   text-transform: uppercase;
   font-size: calc(var(--subheading-min-font-size) * 1px);
   line-height: var(--subheading-line-height);
-  margin-bottom: 0.5em; /* was 1em before. Modded by hs */
-  margin-top: 2em; /* added by hs */
+  margin-bottom: 1em; /* was 1em before. Modded by hs */
+  /* margin-top: 2em; added by hs */
 }
 
 @media screen and (min-width: 320px) {
