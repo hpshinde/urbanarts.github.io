@@ -9211,3 +9211,7 @@ blockquote:before {
 @media only screen
    and (min-device-width : 320px)
    and (max-device-width : 480px){  .mobileHide { display: none;}}
+
+/* Accordion Matter */
+
+
