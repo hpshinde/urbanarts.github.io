@@ -9218,9 +9218,8 @@ blockquote:before {
 */
 .accordion > input[name="collapse"] {
   display: none;
-  
-  /*position: absolute;
-  left: -100vw;*/
+  position: absolute;
+  left: -100vw;
 }
 
 .accordion label,
