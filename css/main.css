@@ -9212,6 +9212,116 @@ blockquote:before {
    and (min-device-width : 320px)
    and (max-device-width : 480px){  .mobileHide { display: none;}}
 
-/* Accordion Matter */
+/* Accordion */
+/*
+ CSS for the main interaction
+*/
+.accordion > input[name="collapse"] {
+  display: none;
+  
+  /*position: absolute;
+  left: -100vw;*/
+}
+
+.accordion label,
+.accordion .content{
+ max-width: 620px;
+  margin: 0 auto;
+ }
 
 
+.accordion .content {
+  background: var(--color-accent-secondary-3);
+  overflow: hidden;
+  height: 0;
+  transition: 0.5s;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  padding: 0 15px; 
+}
+
+.accordion > input[name="collapse"]:checked ~ .content {
+  height: 380px;
+  transition: height 0.5s;
+}
+
+.accordion label {
+  display: block;
+ 
+}
+
+
+/* For Desktop */
+@media only screen and (min-width: 620px){
+
+
+.accordion > input[name="collapse"]:checked ~ .content {
+  height: auto;
+}
+
+}
+
+/*
+.accordion {
+  margin-bottom: 1em;
+}
+*/
+
+.accordion > input[name="collapse"]:checked ~ .content {
+  border-top: 0;
+  transition: 0.3s;
+}
+
+.accordion .subheading-a {
+  margin: 0;
+  font-size: calc(var(--subheading-max-font-size) * 1px);
+}
+
+.accordion label {
+  cursor: pointer;
+  font-family: var(--font-primary);
+  line-height: var(--subheading-line-height);
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+  background: var(--color-accent-secondary-2);
+  user-select: none;
+  
+}
+
+.accordion label:hover,
+.accordion label:focus {
+  background: var(--color-accent-secondary-1);
+}
+
+.accordion .subheading-a label:before {
+  font-family: FontAwesome;
+  content: "\f107";
+  display: inline-block;
+  margin-right: 12px;
+  line-height: var(--subheading-line-height);
+  letter-spacing: 2px;
+  font-size: calc(var(--subheading-max-font-size) * 1.2px);
+  vertical-align: middle;
+  transition: 0.84s;
+  
+}
+
+.accordion > input[name="collapse"]:checked ~ .subheading-a label:before {
+    transform: rotate(-90deg);
+    transform-origin: center;
+    transition: 0.84s;
+}
+
+.accordion p:last-child {
+  margin-bottom: 0;
+  padding: 1em;
+}
+
+.accordion ul {
+  margin-bottom: 0;
+  padding: 1em;
+}
