@@ -9223,10 +9223,10 @@ blockquote:before {
 }
 
 .accordion label,
-.accordion .content{
- max-width: 98%;
+.accordion .content {
+  max-width: 100%;
   margin: 0 auto;
- }
+}
 
 
 .accordion .content {
@@ -9242,7 +9242,8 @@ blockquote:before {
 }
 
 .accordion > input[name="collapse"]:checked ~ .content {
-  height: 380px;
+  height: auto; /* was set to 380px; the height of content on mobile */
+  max-height: 70vh; /* set the max-height of content on mobile */
   transition: height 0.5s;
 }
 
@@ -9253,10 +9254,8 @@ blockquote:before {
 
 
 /* For Desktop */
-@media only screen and (min-width: 620px){
-
-
-.accordion > input[name="collapse"]:checked ~ .content {
+@media only screen and (min-width: 576px) {
+  .accordion > input[name="collapse"]:checked ~ .content {
   height: auto;
 }
 
@@ -9320,7 +9319,10 @@ blockquote:before {
   padding: 1em;
 }
 
-.accordion ul {
+.accordion ul, ol {
   margin-bottom: 0;
-  padding: 1em;
+  padding-top: 0px;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  padding-left: 2em;
 }
