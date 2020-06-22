@@ -1,0 +1,226 @@
+/* 1. UA's Customisations */
+/* ======================================================================== */
+/* In the HTML file insert between head tags:  */
+/* <head>  */
+/* 	<link rel="stylesheet" type="text/css" href="css/mystyle.css">  */
+/* </head>  */
+/* ======================================================================== */
+/* 1. Extra Small Padding /
+/* ======================================================================== */
+
+.section_pb-xxsmall {
+  padding-bottom: calc(var(--distance-min-xsmall) * 0.5px);
+}
+
+.section_pt-xxsmall {
+  padding-bottom: calc(var(--distance-min-xsmall) * 0.5px);
+}
+
+/* ======================================================================== */
+/* 2. Blockquote /
+/* ======================================================================== */ 
+
+blockquote:before {
+  color: #ccc;
+  content: "\259B";
+  font-size: 2em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+  display: inline;
+  position: absolute;
+  left: -15px;
+}
+
+/* ======================================================================== */
+/* 3. Slider Captions Tweak /
+/* ======================================================================== */ 
+
+.slider-images__caption {
+  letter-spacing: 1px; /* ADDED BY HS */
+  color: #888888; /* ADDED BY HS */
+  text-transform: uppercase; /* ADDED BY HS */
+  font-size: calc(var(--subheading-min-font-size) * 1px); /* ADDED BY HS */
+}
+
+.section-image__caption {
+  letter-spacing: 1px; /* ADDED BY HS */
+  color: #cccccc; /* ADDED BY HS */
+  text-transform: uppercase; /* ADDED BY HS */
+  font-size: calc(var(--subheading-min-font-size) * 1px); /* ADDED BY HS */
+}
+
+/* ======================================================================== */
+/* 4. Large Subheading /
+/* ======================================================================== */ 
+
+.subheading-large {
+  font-family: var(--font-primary);
+  font-size: calc(var(--subheading-min-font-size) * 1.2px);
+  font-weight: bold;
+  line-height: var(--subheading-line-height);
+  letter-spacing: 2px;
+  color: #888888;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+  margin-top: 2em;
+}
+
+@media screen and (min-width: 320px) {
+  .subheading-large {
+    font-size: calc(var(--subheading-min-font-size) * 1.2px + (var(--subheading-max-font-size) - var(--subheading-min-font-size)) * ((100vw - 320px) / 1600));
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .subheading-large {
+    font-size: calc(var(--subheading-max-font-size) * 1.2px);
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .subheading-large {
+    font-size: calc(var(--subheading-min-font-size) * 1.2px + (var(--subheading-max-font-size) - var(--subheading-min-font-size)) * ((100vw - 320px) / 1600));
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .subheading-large {
+    font-size: calc(var(--subheading-max-font-size) * 1.2px);
+  }
+}
+/* ======================================================================== */
+/* 5. Hide logo in Mobile */
+/* ======================================================================== */
+
+.mobileHide { display: inline;}
+/* Smartphone Portrait and Landscape */
+@media only screen
+   and (min-device-width : 320px)
+   and (max-device-width : 480px){  .mobileHide { display: none;}}
+
+/* ======================================================================== */
+/* 6. Accordion */
+/* ======================================================================== */
+
+.accordion {
+  font-size: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.accordion-header,
+.accordion-body {
+  background: white;
+}
+
+.accordion-header {
+  padding: .5em 1em;
+  /*background: var(--color-accent-secondary-3);*/
+  background: transparent;
+  border-left: 1em solid var(--color-accent-secondary-3);
+  border-top: 1px solid var(--color-accent-secondary-3);
+  /* remove above 3 lines and uncomment the one above to revert to normal*/
+  color: var(--color-accent-primary-4);
+  cursor: pointer;
+  font-size: calc(var(--subheading-min-font-size) * 1.2px);
+  letter-spacing: .1em;
+  transition: all .3s;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.accordion__item {
+  border-bottom: 1px solid transparent;
+}
+
+.accordion__item .accordion__item {
+  border-bottom: 1px solid transparent;
+}
+
+.accordion-header:hover {
+  background: var(--color-accent-secondary-2);
+  color: var(--color-accent-primary-3);
+  position: relative;
+  z-index: 5;
+}
+
+.accordion-body {
+  background: var(--color-accent-secondary-4);
+  display: none;
+}
+
+.accordion-body__contents {
+  padding: 1em 0.8em;
+  font-size: 1em;
+}
+
+.accordion__item.active:last-child .accordion-header {
+  border-radius: none;
+}
+
+.accordion:first-child > .accordion__item > .accordion-header {
+  border-bottom: 1px solid transparent;
+}
+
+.accordion__item > .accordion-header:after {
+  content: "\f107";
+  font-family: FontAwesome;
+  font-size: 1.5em;
+  float: right;
+  position: relative;
+  top: -5px;
+  transition: .3s all;
+  transform: rotate(0deg);
+}
+
+.accordion__item.active > .accordion-header:after {
+  transform: rotate(-180deg);
+}
+
+.accordion__item.active .accordion-header {
+  background: var(--color-accent-secondary-2);
+  color: var(--color-accent-primary-3);
+}
+
+.accordion__item .accordion__item .accordion-header {
+  background: transparent;
+  color: var(--color-accent-primary-3);
+  font-weight: normal;
+  margin-left: 1em;
+  border-left: 1em solid var(--color-accent-secondary-3);
+}
+
+.accordion__item .accordion__item .accordion-body__contents {
+  margin-left: 2em;
+  font-size: .9em;
+}
+
+/*
+@media screen and (max-width: 991px) {
+  body {
+    padding: 1em;
+  }
+  
+  .accordion {
+    width: 100%;
+  }
+}
+*/
+
+.accordion ul, ol {
+  margin-bottom: 0;
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  padding-left: 2em;
+  color: var(--color-accent-primary-3);
+}
+
+.accordion ul {
+  list-style-type: '一 ';
+}
+
+.accordion ol {
+  list-style-type: lower-latin;
+}

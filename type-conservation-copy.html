@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,400,400i,700,700i%7CPlayfair+Display:400,400i,700,700i%7CMaterial+Icons&amp;display=swap"/>
     <link rel="stylesheet" type="text/css" href="css/vendor.css"/>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
     <link rel="apple-touch-icon" sizes="57x57" href="img/content/apple-icon-57x57.png"/>
     <link rel="apple-touch-icon" sizes="60x60" href="img/content/apple-icon-60x60.png"/>
     <link rel="apple-touch-icon" sizes="72x72" href="img/content/apple-icon-72x72.png"/>
@@ -338,7 +339,7 @@
               <div class="row justify-content-between">
                 <div class="col-lg-4 section-content__content">
                   <div class="section-content__subheading subheading-large split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines"><span>Relevance</span></div>
-                  <div class="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
+                  <div class="split-text js-split-text section_pb-xxsmall" data-split-text-type="lines" data-split-text-set="lines">
                     <p>Rapid urban development has faced us with the urgent & daunting task of preserving the Deccan's rich cultural heritage so that it can be enjoyed by the present and future generations. In such a scenario, Historic Preservation and Adaptive Reuse are important tools for local communities to provide needed facilities, and yet maintain their unique identities, cultural interests, and heritage. </p> 
                     <p>Such projects are usually very challenging and time&ndash;involving, but &mdash; in addition to being the right approach: sustainability&ndash;wise &mdash; they can be extremely beneficial to the society at large as they help to create a strong sense of local&dash;pride and place&dash;belonging.</p>
                   </div>
@@ -349,12 +350,13 @@
                 <!-- START : SERVICES -->
                 <div class="col-lg-8 section-content__content">
                   <div class="section-content__subheading subheading-large split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines" style="margin-bottom: 1em;"><span>Services Offered</span></div>
-                  <!-- START : ACCORDION -->
-                  <div class="accordion split-text js-split-text color-white" data-split-text-type="lines" data-split-text-set="lines">
-                    <input type="radio" name="collapse" id="handle1" checked="checked">
-                    <div class="subheading-a"><label for="handle1">Strategic Heritage Planning</label></div>
-                    <div class="content">
-                      <p>We understand the complexity and sensitivity of heritage sites and provide a range of services for heritage advice and heritage planning &mdash; assisting clients in master-planning, feasibility studies and strategic planning. It includes the preparation of:</p>
+                <!-- START : ACCORDION -->
+                <div class="accordion js-accordion">
+                  <div class="accordion__item js-accordion-item active">
+                    <div class="accordion-header js-accordion-header">Strategic Heritage Planning</div> 
+                  <div class="accordion-body js-accordion-body">
+                    <div class="accordion-body__contents">
+                      We understand the complexity and sensitivity of heritage sites and provide a range of services for heritage advice and heritage planning &mdash; assisting clients in master-planning, feasibility studies and strategic planning. It includes the preparation of:
                       <ul>
                         <li>Heritage Asset Management Plans,</li>
                         <li>Heritage Precinct (Regional) Development Plans,</li>
@@ -364,35 +366,67 @@
                         <li>Evaluation of Existing Master Plans for Heritage-Based Planning</li>
                       </ul>
                     </div>
+                  </div><!-- end of accordion body -->
+                </div><!-- end of accordion item -->
+                <div class="accordion__item js-accordion-item">
+                  <div class="accordion-header js-accordion-header">Assessment of Buildings of Historic Significance</div> 
+                  <div class="accordion-body js-accordion-body">
+                    <div class="accordion-body__contents">“<em>Cultural Heritage Significance</em>” can have tangible/intangible values: aesthetic, archaeological, architectural, cultural, historical, scientific, social, spiritual, symbolic, linguistic or technological value. We assist clients in properly accessing heritage assets, making easier the process of eventual compliance to UNESCO's Outstanding Universal Values, later on. Such assessments ensure that future decisions & actions do not jeopardise the value of heritage or its significance &mdash; protecting them from damage, deterioration, conflict, and subversive vested interests.</div>
+                  </div><!-- end of accordion body -->
+                </div><!-- end of accordion item -->
+                <div class="accordion__item js-accordion-item">
+                  <div class="accordion-header js-accordion-header">Reprogramming of Existing Infrastructure</div> 
+                  <div class="accordion-body js-accordion-body">
+                    <div class="accordion-body__contents">The very features that make historic buildings special are the same features that can often pose problems for their use in modern times. Planning and design techniques that allow our historic buildings to fit today’s needs &mdash; without threatening or destroying their distinguishing features &mdash; is an urgent need in today's rapidly changing urban environments.</div>
+                    <div class="accordion js-accordion">
+                      <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">Adaptive Reuse of Heritage Structures</div> 
+                        <div class="accordion-body js-accordion-body">
+                          <div class="accordion-body__contents">This primary <strong><em>Sustainability</em> Approach</strong> allows contemporary use of heritage buildings, and in-turn, extends their lifespan. When appropriate, we use our technical knowledge of materials & traditional building techniques in combination with contemporary technology to facilitate architectural conservation and adaptive reuse. This may include analysis of retrofit compatibility, addressing code-compliance, accessibility, maintenance, installation of modern amenities & building-services, and  issues of presentation.
+                          </div><!-- end of sub accordion item body contents -->
+                        </div><!-- end of sub accordion item body -->
+                      </div><!-- end of sub accordion item -->
+                    </div><!-- end of sub accordion -->
+                  </div><!-- end of accordion body -->
+                </div><!-- end of accordion item -->
+              <div class="accordion__item js-accordion-item">
+                <div class="accordion-header js-accordion-header">Renovation of Both Occupied and Unoccupied Buildings</div>
+                <div class="accordion-body js-accordion-body">
+                  <div class="accordion-body__contents">
+                    We provide diagnostic and conditions assessment services that incorporate design, structural stability analysis,  paint, plaster & mortar sample analysis, documentation, tendering and construction services for projects of varying scale and complexity. Our past experience includes projects for institutional, government as well as for private clients.
                   </div>
-                  <div class="accordion split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
-                    <input type="radio" name="collapse" id="handle2">
-                    <div class="subheading-a"><label for="handle2">Assessment of Buildings of Historic Significance</label></div>
-                    <div class="content">
-                      <p>“Cultural Heritage Significance” can have tangible/intangible values: aesthetic, archaeological, architectural, cultural, historical, scientific, social, spiritual, symbolic, linguistic or technological value. We assist clients in properly accessing heritage assets, making easier the process of eventual compliance to UNESCO's Outstanding Universal Values, later on. Such assessments ensure that future decisions & actions do not jeopardise the value of heritage or its significance &mdash; protecting them from damage, deterioration, conflict, and subversive vested interests. </p>
-                    </div>
-                  </div>
-                  <div class="accordion split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
-                    <input type="radio" name="collapse" id="handle3">
-                    <div class="subheading-a"><label for="handle3">Reprogramming of Existing Infrastructure</label></div>
-                    <div class="content">
-                      <p>The very features that make historic buildings special are the same features that can often pose problems for their use in modern times. Planning and design techniques that allow our historic buildings to fit today’s needs &mdash; without threatening or destroying their distinguishing features &mdash; is an urgent need in today's rapidly changing urban environments.</p>
-                    </div>
-                  </div>
-                  <div class="accordion split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
-                    <input type="radio" name="collapse" id="handle4">
-                    <div class="subheading-a"><label for="handle4">Adaptive Reuse of Heritage Structures</label></div>
-                    <div class="content">
-                      <p>This primary <strong><em>Sustainability</em> Approach</strong> allows contemporary use of heritage buildings, and in-turn, extends their lifespan. When appropriate, we use our technical knowledge of materials & traditional building techniques in combination with contemporary technology to facilitate architectural conservation and adaptive reuse. This may include analysis of retrofit compatibility, addressing code-compliance, accessibility, maintenance, installation of modern amenities & building-services, and  issues of presentation.</p>
-                    </div>
-                  </div>
-                  <div class="accordion split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
-                    <input type="radio" name="collapse" id="handle5">
-                    <div class="subheading-a"><label for="handle5">Renovation of Both Occupied and Unoccupied Buildings</label></div>
-                    <div class="content">
-                      <p>We provide diagnostic and conditions assessment services that incorporate design, structural stability analysis,  paint, plaster & mortar sample analysis, documentation, tendering and construction services for projects of varying scale and complexity. Our past experience includes projects for institutional, government as well as for private clients.</p>
-                    </div>
-                  </div>
+                </div><!-- end of accordion body -->
+              </div><!-- end of accordion item -->
+              <!--
+     <div class="accordion__item js-accordion-item">
+    <div class="accordion-header js-accordion-header">Panel 6</div> 
+  <div class="accordion-body js-accordion-body">
+    <div class="accordion-body__contents">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+    </div>
+      <div class="accordion js-accordion">
+        <div class="accordion__item js-accordion-item">
+           <div class="accordion-header js-accordion-header">Sub Panel 1</div> 
+           <div class="accordion-body js-accordion-body">
+             <div class="accordion-body__contents">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+             </div><-- end of sub accordion item body contents --
+           </div><-- end of sub accordion item body --
+        </div><-- end of sub accordion item --
+        <div class="accordion__item js-accordion-item">
+           <div class="accordion-header js-accordion-header">Sub Panel 2</div> 
+           <div class="accordion-body js-accordion-body">
+             <div class="accordion-body__contents">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+             </div><-- end of sub accordion item body contents --
+           </div><-- end of sub accordion item body --
+        </div><-- end of sub accordion item --
+      </div><-- end of sub accordion --
+    </div><-- end of accordion body --
+  </div><-- end of accordion item --
+-->
+</div><!-- end of accordion -->
+   
                   <!-- END : ACCORDION -->
                 </div>
                 <!-- END : SERVICES -->
@@ -776,6 +810,60 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNq0ueciTt6V_9F8Uhce_15ReMqETLWtU" async></script>
   -->
     <!-- PAGE SCRIPTS-->
+    <script>
+      var accordion = (function(){
+  
+  var $accordion = $('.js-accordion');
+  var $accordion_header = $accordion.find('.js-accordion-header');
+  var $accordion_item = $('.js-accordion-item');
+ 
+  // default settings 
+  var settings = {
+    // animation speed
+    speed: 400,
+    
+    // close all other accordion items if true
+    oneOpen: false
+  };
+    
+  return {
+    // pass configurable object literal
+    init: function($settings) {
+      $accordion_header.on('click', function() {
+        accordion.toggle($(this));
+      });
+      
+      $.extend(settings, $settings); 
+      
+      // ensure only one accordion is active if oneOpen is true
+      if(settings.oneOpen && $('.js-accordion-item.active').length > 1) {
+        $('.js-accordion-item.active:not(:first)').removeClass('active');
+      }
+      
+      // reveal the active accordion bodies
+      $('.js-accordion-item.active').find('> .js-accordion-body').show();
+    },
+    toggle: function($this) {
+            
+      if(settings.oneOpen && $this[0] != $this.closest('.js-accordion').find('> .js-accordion-item.active > .js-accordion-header')[0]) {
+        $this.closest('.js-accordion')
+               .find('> .js-accordion-item') 
+               .removeClass('active')
+               .find('.js-accordion-body')
+               .slideUp()
+      }
+      
+      // show/hide the clicked accordion item
+      $this.closest('.js-accordion-item').toggleClass('active');
+      $this.next().stop().slideToggle(settings.speed);
+    }
+  }
+})();
+
+$(document).ready(function(){
+  accordion.init({ speed: 300, oneOpen: true });
+});
+    </script>
     <!-- - PAGE SCRIPTS-->
   </body>
 </html>
