@@ -143,6 +143,7 @@ blockquote:before {
   color: var(--color-accent-primary-3);
   position: relative;
   z-index: 5;
+  border-left: 1em solid var(--color-accent-secondary-1);
 }
 
 .accordion-body {
@@ -188,7 +189,15 @@ blockquote:before {
   color: var(--color-accent-primary-3);
   font-weight: normal;
   margin-left: 1em;
-  border-left: 1em solid var(--color-accent-secondary-3);
+  border-left: 1em solid var(--color-accent-secondary-2);
+}
+
+.accordion__item .accordion__item .accordion-header:hover {
+  background: var(--color-accent-secondary-2);
+  color: var(--color-accent-primary-3);
+  font-weight: bold;
+  margin-left: 1em;
+  border-left: 1em solid var(--color-accent-secondary-1);
 }
 
 .accordion__item .accordion__item .accordion-body__contents {
