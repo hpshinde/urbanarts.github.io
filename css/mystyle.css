@@ -13,7 +13,7 @@
 }
 
 .section_pt-xxsmall {
-  padding-bottom: calc(var(--distance-min-xsmall) * 0.5px);
+  padding-top: calc(var(--distance-min-xsmall) * 0.5px);
 }
 
 /* ======================================================================== */
