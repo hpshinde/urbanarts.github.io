@@ -123,7 +123,7 @@ blockquote:before {
   /* remove above 3 lines and uncomment the one above to revert to normal*/
   color: var(--color-accent-primary-4);
   cursor: pointer;
-  font-size: calc(var(--subheading-min-font-size) * 1.2px);
+  font-size: calc(var(--subheading-min-font-size) * 1.05px);
   letter-spacing: .1em;
   transition: all .3s;
   text-transform: uppercase;
@@ -219,9 +219,9 @@ blockquote:before {
 
 .accordion ul, ol {
   margin-bottom: 0;
-  padding-top: 1em;
+  padding-top: .5em;
   padding-right: 1em;
-  padding-bottom: 1em;
+  padding-bottom: .75em;
   padding-left: 2em;
   color: var(--color-accent-primary-3);
 }
