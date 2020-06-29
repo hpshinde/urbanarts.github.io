@@ -771,13 +771,13 @@ a:hover, a:focus {
 /* 6. bootstrapLayout */
 /* ======================================================================== */
 .container-fluid {
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: 120px; 
+  padding-right: 120px; 
 }
 
 .container-fluid_paddings {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 100px; /* was 120px Changed by HS */
+  padding-bottom: 100px; /* was 120px Changed by HS */
 }
 
 .container {
