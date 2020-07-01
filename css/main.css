@@ -3841,6 +3841,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   color: var(--color-accent-primary-1);
   font-weight: bold;
   display: inline-flex;
+  padding: 9px 0; /* Added by HS */
 }
 
 .logo__wrapper-img {
