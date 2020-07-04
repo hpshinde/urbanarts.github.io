@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,400,400i,700,700i%7CPlayfair+Display:400,400i,700,700i%7CMaterial+Icons&amp;display=swap"/>
     <link rel="stylesheet" type="text/css" href="css/vendor.css"/>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
-    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/mystyle.css"> -->
     <style type="text/css"> @media print { body { display:none } } </style>
     <link rel="apple-touch-icon" sizes="57x57" href="img/content/apple-icon-57x57.png"/>
     <link rel="apple-touch-icon" sizes="60x60" href="img/content/apple-icon-60x60.png"/>
@@ -342,6 +342,22 @@
               <div class="row justify-content-between">
                 <div class="col-lg-4 section-content__content">
                   <div class="section-content__subheading subheading split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines" style="color: var(--color-accent-secondary-1);"><span>RELEVANCE</span></div>
+                  <div class="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
+                    <button class="accordion">Section 1</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+                  </div>
                   <div class="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
                     <p>Rapid urban development has faced us with the urgent & daunting task of preserving the Deccan's rich cultural heritage so that it can be enjoyed by the present and future generations. In such a scenario, Historic Preservation and Adaptive Reuse are important tools for local communities to provide needed facilities, and yet maintain their unique identities, cultural interests, and heritage. </p> 
                     <p>Such projects are usually very challenging and time&ndash;involving, but &mdash; in addition to being the right approach: sustainability&ndash;wise &mdash; they can be extremely beneficial to the society at large as they help to create a strong sense of local&dash;pride and place&dash;belonging.</p>
@@ -874,58 +890,20 @@
     <!-- Accordion Script -->
 
     <script>
-      var accordion = (function(){
-  
-  var $accordion = $('.js-accordion');
-  var $accordion_header = $accordion.find('.js-accordion-header');
-  var $accordion_item = $('.js-accordion-item');
- 
-  // default settings 
-  var settings = {
-    // animation speed
-    speed: 400,
-    
-    // close all other accordion items if true
-    oneOpen: false
-  };
-    
-  return {
-    // pass configurable object literal
-    init: function($settings) {
-      $accordion_header.on('click', function() {
-        accordion.toggle($(this));
-      });
-      
-      $.extend(settings, $settings); 
-      
-      // ensure only one accordion is active if oneOpen is true
-      if(settings.oneOpen && $('.js-accordion-item.active').length > 1) {
-        $('.js-accordion-item.active:not(:first)').removeClass('active');
-      }
-      
-      // reveal the active accordion bodies
-      $('.js-accordion-item.active').find('> .js-accordion-body').show();
-    },
-    toggle: function($this) {
-            
-      if(settings.oneOpen && $this[0] != $this.closest('.js-accordion').find('> .js-accordion-item.active > .js-accordion-header')[0]) {
-        $this.closest('.js-accordion')
-               .find('> .js-accordion-item') 
-               .removeClass('active')
-               .find('.js-accordion-body')
-               .slideUp()
-      }
-      
-      // show/hide the clicked accordion item
-      $this.closest('.js-accordion-item').toggleClass('active');
-      $this.next().stop().slideToggle(settings.speed);
-    }
-  }
-})();
+      var acc = document.getElementsByClassName("accordion");
+      var i;
 
-$(document).ready(function(){
-  accordion.init({ speed: 300, oneOpen: true });
-});
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
     </script>
     <!-- - PAGE SCRIPTS-->
   </body>
