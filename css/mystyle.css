@@ -89,7 +89,7 @@ blockquote:before {
   }
 }
 /* ======================================================================== */
-/* 5. Hide logo in Mobile */
+/* 5. Hide logo on Small Mobile Screens */
 /* ======================================================================== */
 
 .mobileHide { display: inline;}
