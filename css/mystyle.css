@@ -172,9 +172,9 @@ blockquote:before {
 
 .accordion ul, ol {
   margin-bottom: 0;
-  padding-top: .5em;
+  padding-top: 0em;
   padding-right: 1em;
-  padding-bottom: 0em;
+  padding-bottom: 1em;
   padding-left: 2em;
   color: var(--color-accent-primary-2);
   font-size: 0.95rem;
