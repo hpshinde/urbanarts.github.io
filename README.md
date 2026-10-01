@@ -25,7 +25,7 @@ This is the source for the new Urban Arts static website. It is intentionally sm
 Open Terminal and run:
 
 ```sh
-cd "/Users/data/Pictures/Portfolio/urbanarts-launch"
+cd "/Users/data/Scripts/urbanarts.co.in"
 ./scripts/site.sh build
 ./scripts/site.sh serve
 ```
@@ -257,14 +257,17 @@ The finished deployable website is the contents of `dist/`.
 
 ## Publishing status
 
-This is presently a **local build**. The repository’s current `origin` points to the earlier local website checkout, not directly to a confirmed GitHub/Hostinger production destination. Do not push or replace the live site until the deployment branch and Hostinger configuration have been deliberately checked.
+The repository’s `origin` is `https://github.com/hpshinde/urbanarts.github.io.git`.
 
-At launch, choose and document one deployment method:
+- `source-redesign` contains the editable source.
+- `master` contains the generated contents of `dist/` and is deployed by Hostinger.
+- The rollback tag `pre-redesign-2026-10-01` preserves the version that preceded this redesign.
 
-1. Configure Hostinger/GitHub to build the source and publish `dist/`, or
-2. Commit the generated contents of `dist/` to the branch/folder Hostinger serves.
+The earlier website checkout is archived locally at:
 
-Create a recoverable backup of the existing live site before the first replacement deployment.
+`/Users/data/Scripts/urbanarts.co.in/OLD_VERSION/urbanarts.github.io`
+
+Do not edit that archived checkout when updating the current site.
 
 ## If something goes wrong
 

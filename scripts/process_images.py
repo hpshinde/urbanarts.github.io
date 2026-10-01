@@ -2,11 +2,11 @@ from pathlib import Path
 from PIL import Image, ImageOps
 
 
-ROOT = Path("/Users/data/Pictures/Portfolio/urbanarts-launch")
+ROOT = Path("/Users/data/Scripts/urbanarts.co.in")
 COMPLETED = Path("/Users/data/Pictures/Sites Project Photos/Completed Site Photos")
 RENDERS = Path("/Users/data/Pictures/Sites Project Photos/3D Renders")
 PRINT = Path("/Users/data/Pictures/Portfolio/Print Portfolio Images")
-OLD_SITE = Path("/Users/data/Scripts/urbanarts.co.in/urbanarts.github.io/img/assets")
+OLD_SITE = Path("/Users/data/Scripts/urbanarts.co.in/OLD_VERSION/urbanarts.github.io/img/assets")
 
 IMAGES = {
     "ravi-01": COMPLETED / "Dr Ravi - Site Photos/Images/DSC00562.jpg",
