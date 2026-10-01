@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 const root = path.dirname(fileURLToPath(import.meta.url));
 const out = path.join(root, "dist");
 const siteUrl = "https://urbanarts.co.in";
-const assetVersion = "20261001-05";
+const assetVersion = "20261001-06";
 
 const residential = [
   {
@@ -489,7 +489,7 @@ const experiencePage = layout({
   current: "practice",
   className: "experience-page",
   canonicalPath: "/experience/",
-  body: `<section class="page-hero experience-hero"><p class="kicker">Project experience</p><h1>Nearly five decades, recorded by scope.</h1><p>Representative built, planned and advisory work is organised here by type, with the part Urban Arts was engaged to undertake stated clearly.</p></section>
+  body: `<section class="page-hero experience-hero"><p class="kicker">Project experience</p><h1>Covering nearly five decades of practice, our portfolio is categorised by scope.</h1><p>Below is a representative selection of our projects by type, clearly outlining the specific role that Urban Arts was engaged to undertake for each.</p></section>
   <nav class="experience-index" aria-label="Experience categories">${experienceSections.map((section, index) => `<a href="#experience-${index + 1}"><span>${String(index + 1).padStart(2, "0")}</span>${section.title}</a>`).join("")}</nav>
   <div class="experience-register">${experienceSections.map(experienceCategory).join("")}</div>
   <section class="experience-closing"><p>For experience related to a particular building type, location or service, speak to the studio.</p><a class="button" href="/contact/">Discuss a project</a></section>`,
