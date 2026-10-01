@@ -160,11 +160,9 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.9rem); line-height: 1.1; }
 .service-grid article, .team-grid article, .awards-grid article { padding: 1.5rem 0 2.5rem; border-top: 1px solid var(--line); }
 .service-grid h3, .team-grid h3, .experience-grid h3, .awards-grid h3 { color: var(--heading); font-size: clamp(1.05rem, 1.5vw, 1.35rem); }
 .service-grid p, .team-grid p, .experience-grid p, .awards-grid p, .client-note { color: var(--muted); }
-.team-grid, .awards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(2rem, 4vw, 5rem); }
+.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(1.5rem, 3vw, 4rem); }
+.awards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(2rem, 4vw, 5rem); }
 .team-grid .role { color: var(--accent); font-size: .76rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
-.technical-team { margin-top: clamp(2rem, 5vw, 5rem); padding: clamp(1.5rem, 3vw, 2.5rem) 0 0; border-top: 1px solid var(--accent); display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(2rem, 8vw, 8rem); align-items: start; }
-.technical-team h3 { color: var(--heading); font-size: clamp(1.4rem, 2.3vw, 2.2rem); }
-.technical-team > p { max-width: 680px; color: var(--muted); font-size: clamp(1rem, 1.25vw, 1.2rem); }
 .principal-section { max-width: none; background: var(--deep); color: var(--paper); }
 .principal-section > header, .principal-grid { max-width: calc(var(--max) - 2 * var(--pad)); margin-left: auto; margin-right: auto; }
 .principal-section > header h2 { max-width: 900px; color: var(--paper); }
@@ -318,9 +316,10 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.9rem); line-height: 1.1; }
   .practice-section > header { grid-template-columns: 1fr; }
   .practice-section > header .kicker { grid-column: auto; }
   .service-grid { grid-template-columns: 1fr 1fr; }
-  .team-grid, .awards-grid { grid-template-columns: 1fr; gap: 0; }
+  .team-grid { grid-template-columns: 1fr 1fr; }
+  .awards-grid { grid-template-columns: 1fr; gap: 0; }
   .principal-grid { grid-template-columns: 1fr; }
-  .technical-team, .experience-category { grid-template-columns: 1fr; }
+  .experience-category { grid-template-columns: 1fr; }
   .experience-index { grid-template-columns: 1fr 1fr; }
   .experience-list > div { grid-template-columns: .8fr 1.2fr; }
   .steps { grid-template-columns: 1fr; }
@@ -372,6 +371,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.9rem); line-height: 1.1; }
   .site-footer { line-height: 1.7; }
   .approach-steps { grid-template-columns: 1fr; }
   .service-grid, .experience-grid { grid-template-columns: 1fr; }
+  .team-grid { grid-template-columns: 1fr; gap: 0; }
   .experience-preview, .experience-closing { grid-template-columns: 1fr; align-items: start; }
   .experience-preview .button, .experience-closing .button { justify-self: start; }
   .experience-index { grid-template-columns: 1fr; }
