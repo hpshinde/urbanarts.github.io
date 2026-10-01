@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 const root = path.dirname(fileURLToPath(import.meta.url));
 const out = path.join(root, "dist");
 const siteUrl = "https://urbanarts.co.in";
-const assetVersion = "20261001-03";
+const assetVersion = "20261001-04";
 
 const residential = [
   {
@@ -54,9 +54,9 @@ const residential = [
     role: "Design + build",
     scope: "Architecture · Interiors · Landscape · Turnkey implementation",
     intro: "A city house capable of another life. Originally designed by Urban Arts as the owner’s home, it was later converted into a café after the family moved to their farm.",
-    note: "Deep verandahs, brick arcades and planted courts temper the climate and place semi-open space at the centre of the house. Rooms open onto this shaded framework rather than simply facing outward. Its later conversion into a café was not anticipated as a theme; it was made possible by the generosity and adaptability of the original residential plan.",
+    note: "Deep verandahs, stone arcades and planted courts temper the climate and place semi-open space at the centre of the house. Rooms open onto this shaded framework rather than simply facing outward. Its later conversion into a café was not anticipated as a theme; it was made possible by the generosity and adaptability of the original residential plan.",
     images: ["mla-01", "mla-02", "mla-03", "mla-04", "mla-05", "mla-06", "mla-07", "mla-08", "mla-09"],
-    alt: ["Brick courtyard and shaded verandahs at BRR Residence", "Landscaped courtyard with outdoor seating", "Arched brick verandah and stone floor", "Dining terrace framed by brick arches", "Courtyard elevation and shaded upper gallery", "Deep colonnaded passage through the residence", "BRR Residence and courtyard illuminated at night", "Brick tower rising above the planted courtyard", "Interior display and handcrafted lighting beneath a timber ceiling"],
+    alt: ["Stone courtyard and shaded verandahs at BRR Residence", "Landscaped courtyard with outdoor seating", "Arched stone verandah and stone floor", "Dining terrace framed by stone arches", "Courtyard elevation and shaded upper gallery", "Deep colonnaded passage through the residence", "BRR Residence and courtyard illuminated at night", "Stone tower rising above the planted courtyard", "Interior display and handcrafted lighting beneath a timber ceiling"],
   },
   {
     slug: "ravi-residence",
@@ -264,6 +264,94 @@ const wider = [
 
 const projects = [...residentialProjects, ...ongoing, ...wider];
 
+const experienceSections = [
+  {
+    title: "Homes and residential development",
+    intro: "Individual houses, model homes, apartment interiors and larger residential layouts—often carried from architecture and planning through interiors, furniture, landscape and implementation.",
+    projects: [
+      ["BRR Residence · Banjara Hills, Hyderabad", "Architecture, interiors, landscape and turnkey implementation; originally a city home, later adapted as a café."],
+      ["Kompally Residence · Hyderabad", "Interior architecture, award-winning open kitchen, custom furniture, landscape and turnkey implementation."],
+      ["Amara Model Homes", "Model-home interiors, furniture, styling and turnkey implementation across multiple apartment types."],
+      ["Siri Malli Brindawan Gardens · Hyderabad", "Residential plotting layout; north-, west- and east-facing farmhouse units; clubhouse and landscape design."],
+      ["Silent Valley Resorts · Hyderabad", "Residential plotting layout; north-, west- and east-facing farmhouse units; clubhouse and landscape design."],
+      ["Rainbow Vistas, Phase 1 · Model Apartments · Hyderabad", "Interior design; customised furniture and furnishings; partitions and built-in furniture; wardrobes, modular kitchens, lighting and accessories."],
+      ["Aditya Empress Park · Model Houses · Hyderabad", "Custom furniture design and supply; window treatments, wall coverings, interior colour palette and accessories."],
+    ],
+  },
+  {
+    title: "Interiors, furniture and turnkey delivery",
+    intro: "The interior practice combines space planning with cabinetry, furniture, services, lighting, furnishings and site coordination. Urban Arts has completed hundreds of turnkey interior projects for private and institutional clients.",
+    projects: [
+      ["Brahma Kumaris Educational Society Auditorium · Gachibowli, Hyderabad", "Complete interior design; acoustic wall panelling; stage flooring; sound-insulating doors; fire-retardant drapery, carpets, furniture and entrance-door design."],
+      ["Apollo Life Gym & Spa · Madhapur, Hyderabad", "Guest and staff lockers; built-in cabinetry and partitions; poolside and seating furniture; blinds and curtains."],
+      ["Adani Wilmar Office · Hyderabad", "Interior design, office furniture, window treatments and custom wall graphics."],
+      ["Airtel Guest House · Hyderabad", "Soft furnishings and window treatments."],
+      ["Uninor Guest House · Hyderabad", "Furniture, soft furnishings and window treatments."],
+      ["HTC Global Guest House · Hyderabad", "Furniture, upholstery, leather, soft furnishings and window treatments."],
+      ["Raj Bhavan · Governor’s Residence and Durbar Hall · Hyderabad", "Custom furniture; dais, flooring and built-in furniture; refurbishment of old furniture."],
+    ],
+  },
+  {
+    title: "Hospitality, retail and workplaces",
+    intro: "Hotels, restaurants, guest rooms, showrooms and offices developed around operations, guest experience, speed of delivery and the precise scope entrusted to the practice.",
+    projects: [
+      ["Atithi Inn · Hyderabad", "Architecture for guest rooms, banquet and conference halls; interiors, MEP services, custom furniture and furnishings, retrofit of antique elements and project management."],
+      ["Ullasa Rooftop Restaurant · Hyderabad", "Architecture, interiors, landscape, furniture and lighting design, custom wall treatments and project management."],
+      ["Park Hyatt · Guest Rooms and Public Areas · Hyderabad", "Custom-manufactured furnishings, upholstery, curtains, blinds, wall coverings and selected floor coverings."],
+      ["Hotel Quality Inn Pearl · Hyderabad", "Custom lobby furniture; curtains, upholstery and leatherwork for guest rooms."],
+      ["Rococco Resorts · Goa", "Custom furniture for lobbies and guest rooms; curtains, upholstery and leatherwork."],
+      ["HomeStudio, Habitat Interiors and Best Buy · Hyderabad", "Architecture and interiors for furniture and furnishings showrooms."],
+      ["Chandubhai Jewellery Mall · Hyderabad", "Architecture and interiors."],
+      ["Adani Wilmar Application Technology Centre · Hyderabad", "Office interiors."],
+      ["MIDHANI and TRIFED offices · Hyderabad", "Office interiors."],
+      ["Fat Pigeon, La Calypso, Filmy Junction and Spoil · Hyderabad", "Project-specific custom seating, furniture supply and, where commissioned, refurbishment."],
+    ],
+  },
+  {
+    title: "Institutional, educational and cultural",
+    intro: "Campuses, schools, universities, museums, hospitals and places of assembly, with architecture, landscape and interiors brought together according to each institution’s programme.",
+    projects: [
+      ["Shanti Sarovar · Brahma Kumaris South India Campus · Hyderabad", "Thirty-five-acre green campus, landscape and architecture for reception, training, meditation, auditorium, seminar, residential, dining and large-congregation facilities."],
+      ["Jawaharlal Nehru Technological University · Hyderabad", "Campus development plan and design of important buildings."],
+      ["Osmania University · Hyderabad", "Architecture, interiors, landscape and mural work across NERTU, the Science Faculty Library, Pedagogy Block and College of Engineering teaching spaces."],
+      ["Visvesvaraya Regional College of Engineering / VNIT · Nagpur", "Architecture for postgraduate departments in Public Health Engineering, Metallurgical Engineering and Computer Science, and the Students’ Amenities Centre."],
+      ["Froebel’s High School · Hyderabad", "Conservation of historic campus structures and architecture for a new academic block."],
+      ["Vivek Vardhini Educational Society · Hyderabad", "Vivek Vardhini High School and proposed Institute of Technology."],
+      ["Srisailam Devasthanam", "Architecture for the administrative office, VIP guest house, 100-room choultry and annadanam building."],
+      ["AP State Museum · Hyderabad", "Restoration; architecture and interiors for a new extension."],
+      ["AP State Archaeology Museum · Khammam", "Architecture and interior design."],
+      ["Bhadrachalam Devasthanam Jewellery Museum · Andhra Pradesh", "Interior design."],
+      ["Museums at Pillalamarri and Gun Foundry · Telangana", "Architecture and interiors at Pillalamarri; architecture for the Gun Foundry Museum centenary extension."],
+    ],
+  },
+  {
+    title: "Heritage conservation and adaptive reuse",
+    intro: "Condition assessment, conservation planning, restoration guidance and adaptive reuse grounded in the material logic and cultural significance of each historic place.",
+    projects: [
+      ["Kachiguda Railway Station · Hyderabad", "Condition assessment and recommendations; tendering and bid selection; guidance for restoration using compatible lime-mortar and jack-arch systems."],
+      ["Hill Fort Palace / Ritz Hotel · Hyderabad", "Adaptive-reuse interior design, landscape design and condition assessment."],
+      ["Raj Bhavan Durbar Hall · Hyderabad", "Condition assessment; conservation-led interiors; renewed and antique-styled furniture; ceilings, wall panelling and flooring."],
+      ["Alampur Tourism Infrastructure Development Plan", "Regional and temple-precinct planning, Sangameshwara Temple and Tungabhadra riverfront proposals, visitor amenities and an architectural fact-file for the region."],
+      ["Princess Esin Women’s Educational Centre · Purani Haveli, Hyderabad", "Condition assessment and conservation recommendations."],
+      ["Khusro Manzil · Hyderabad", "Detailed project report, guidance for Grade III heritage listing and architectural conservation."],
+      ["Golden Threshold / Sarojini Naidu School for Fine Arts · Hyderabad", "Architectural-conservation proposal, selected among four finalists in an invited competition."],
+    ],
+  },
+  {
+    title: "Urban design, planning and infrastructure",
+    intro: "Work at the scale of settlements, transport, public space and regional systems, from architectural studies to planning and mobility advice.",
+    projects: [
+      ["Narasimhapuram Township · Andhra Pradesh", "Architecture for the rehabilitation settlement of 20,000 people displaced by coal mining at Ramagundam–Godavarikhani."],
+      ["PVNR / HUDA Elevated Expressway · Hyderabad", "Architectural design visualisation for the piers and undercarriage."],
+      ["DWACRA Shopping and Children’s Park · Hyderabad", "Front-space development for Lalitha Kala Thoranam and design guidelines."],
+      ["Nagpur Metropolitan Planning Region Development Plan", "Traffic and transportation study; participation as a non-governmental expert."],
+      ["Harduaganj Thermal Power Plant · Uttar Pradesh", "Design for the Stage II extension."],
+      ["Matatila Hydroelectric Project · Uttar Pradesh", "Architectural design."],
+      ["Damodar Valley Regional Plan", "Traffic and transportation study for the Middle Damodar Region."],
+    ],
+  },
+];
+
 const portraitAssets = new Set([
   "amara-01", "amara-02", "amara-03", "amara-04", "amara-05",
   "atithi-02", "atithi-06", "atithi-07",
@@ -318,7 +406,7 @@ const projectCard = (p, index = 0) => `<article class="project-card reveal" styl
 
 const selectedHomeProjects = [
   { project: residential.find((p) => p.slug === "kompally-residence"), image: "lalitha-04", alt: "Landscaped garden at Kompally Residence" },
-  { project: residential.find((p) => p.slug === "brr-residence"), image: "mla-08", alt: "Brick tower and planted courtyard at BRR Residence" },
+  { project: residential.find((p) => p.slug === "brr-residence"), image: "mla-08", alt: "Stone tower and planted courtyard at BRR Residence" },
   { project: residential.find((p) => p.slug === "ravi-residence"), image: "ravi-01", alt: "Warm living room at Ravi Residence" },
   { project: wider.find((p) => p.slug === "atithi-inn"), image: "atithi-08", alt: "Chettinad-inspired banquet interior at Atithi Inn" },
 ];
@@ -378,9 +466,9 @@ const practicePage = layout({
   <section class="practice-image practice-model">${image("practice-model", "Architectural model of the Guwahati Convention Centre")}</section>
   <section class="split-copy"><div><p class="kicker">Since 1978</p><h2>One practice, built across generations.</h2></div><div><p>Deoyani Shinde founded Urban Arts in 1978, establishing a collaborative practice across homes, campuses and institutional buildings. Dr Pramod Shinde extended that work through environmental design, planning, conservation and a sustained study of Hyderabad. After returning to the city in 2001, Harshal Shinde brought architecture into closer contact with interiors, furniture, fabrication and turnkey delivery.</p><p>Across nearly five decades and hundreds of commissions, the scale has changed—from furniture and private rooms to green campuses, heritage buildings and very large urban layouts. The obligation remains the same: to find conceptual clarity, balance form with function and give each project a character particular to its people, place and making.</p></div></section>
   <section class="practice-section services-section"><header><p class="kicker">What we do</p><h2>Architecture at every scale of use.</h2><p>A client may engage one discipline or ask Urban Arts to hold the project together from the first plan to the last installation.</p></header><div class="service-grid"><article><h3>Residential architecture</h3><p>Homes and residential developments shaped by climate, context and the patterns of daily life—from site planning and architecture to landscape and consultant coordination.</p></article><article><h3>Interiors and turnkey delivery</h3><p>Interiors treated as architecture at close range. Planning, services, lighting, materials and budgets are carried through drawings, site decisions and final installation.</p></article><article><h3>Kitchens, furniture and furnishings</h3><p>Ergonomics, material and making brought together in kitchens, wardrobes, cabinetry and loose furniture, combining precise factory production with bespoke hand finishing where each serves best.</p></article><article><h3>Hospitality and commercial spaces</h3><p>Hotels, restaurants, showrooms and workplaces developed around operations, guest experience, speed of delivery and the discipline of a defined budget.</p></article><article><h3>Institutional and campus design</h3><p>Complex programmes resolved at the scale of building, campus and landscape, with ecology and public use treated as part of the architectural brief.</p></article><article><h3>Conservation, planning and urban design</h3><p>Historic fabric and urban systems approached through measured study—condition, material, context and use—before repair, adaptation or new intervention is proposed.</p></article></div></section>
-  <section class="practice-section team-section"><header><p class="kicker">Who we are</p><h2>Complementary experience, shared across the studio.</h2></header><div class="team-grid"><article><h3>Deoyani Shinde</h3><p class="role">Founder · Architect</p><p>Founded Urban Arts in 1978. Her work across residences, campuses and institutions is grounded in collaboration, clarity of planning, respect for nature and the comfort of the people who will inhabit a place.</p></article><article><h3>Dr Pramod Shinde</h3><p class="role">Urban Designer · Planner · Conservation Architect</p><p>An architect, educator and author working across environmental design, planning, conservation and Hyderabad’s architectural history. He was the first architect in India to receive a PhD in Architecture, in Environmental Design from IIT Kharagpur.</p></article><article><h3>Harshal Shinde, MS Arch</h3><p class="role">Chief Architect</p><p>Leads the practice across architecture, interiors, furniture and implementation, joining design development to a close understanding of materials, manufacturing and the realities of the building site.</p></article></div></section>
-  <section class="practice-section principal-section"><header><p class="kicker">Chief Architect</p><h2>Architecture, interiors and the intelligence of making.</h2></header><div class="principal-grid"><figure class="principal-media">${image("harshal-profile", "Architect Harshal Shinde seated on broad outdoor steps")}</figure><div class="principal-copy"><p>Harshal Shinde studied architecture in Hyderabad before completing his MS Arch at the University of Cincinnati. He worked with Otis Koglin Wilson Architects in Chicago and returned to join Urban Arts in 2001. His interests range from private homes and interiors to adaptive reuse, sustainability, emergency architecture and rapid housing.</p><p>In 2006, Harshal and Anita Shinde began a furniture venture that grew from bespoke work into advanced manufacturing and four retail outlets. That experience continues to inform the studio: machine precision is used where repetition and control matter; hand skill remains indispensable for fitting, finishing and the particularities of a site.</p><p>Alongside practice, Harshal has served as Director of the JNIAS School of Planning &amp; Architecture at JNAFA University. Photography, travel, writing and painting are not presented as a separate creative persona; they are other ways of looking closely, recording context and testing an idea.</p></div></div></section>
-  <section class="practice-section experience-section"><header><p class="kicker">Selected experience</p><h2>Selected experience across scales.</h2></header><div class="experience-grid"><article><h3>Hospitality and commercial</h3><p>Atithi Inn · Ullasa Rooftop Restaurant · Hill Fort Palace / Ritz Hotel · HomeStudio · Habitat Interiors · Jaquar Artize showrooms · Adani Wilmar Application Technology Centre · MIDHANI and TRIFED offices</p></article><article><h3>Institutional and public</h3><p>Shanti Sarovar · AP State Archaeology Museum · University of Hyderabad facilities · Vivek Vardhini campus projects · Kachiguda Railway Station · Raj Bhavan Durbar Hall · PVNR Elevated Expressway</p></article></div><p class="client-note"><strong>Selected clients and institutions include</strong> private homeowners and residential developers, South Central Railway, the Government of Telangana, the University of Hyderabad, Brahma Kumaris, Jaquar &amp; Company, Adani Wilmar, MIDHANI and TRIFED.</p></section>
+  <section class="practice-section team-section"><header><p class="kicker">Who we are</p><h2>Complementary experience, shared across the studio.</h2></header><div class="team-grid"><article><h3>Deoyani Shinde</h3><p class="role">Founder · Architect</p><p>Founded Urban Arts in 1978. Her work across residences, campuses and institutions is grounded in collaboration, clarity of planning, respect for nature and the comfort of the people who will inhabit a place.</p></article><article><h3>Dr Pramod Shinde</h3><p class="role">Urban Designer · Planner · Conservation Architect</p><p>An architect, educator and author working across environmental design, planning, conservation and Hyderabad’s architectural history. He was the first architect in India to receive a PhD in Architecture, in Environmental Design from IIT Kharagpur.</p></article><article><h3>Harshal Shinde, MS Arch</h3><p class="role">Chief Architect</p><p>Leads the practice across architecture, interiors, furniture and implementation, joining design development to a close understanding of materials, manufacturing and the realities of the building site.</p></article></div><article class="technical-team"><div><p class="kicker">In-house structural engineering</p><h3>Er Sudhir S Shinde</h3></div><p>Structural engineering is part of the practice’s in-house capability, allowing architectural intent, structural logic and the practical sequence of construction to be considered together from an early stage.</p></article></section>
+  <section class="practice-section principal-section"><header><p class="kicker">Chief Architect</p><h2>Architecture, interiors and the intelligence of making.</h2></header><div class="principal-grid"><figure class="principal-media">${image("harshal-profile", "Architect Harshal Shinde seated on broad outdoor steps")}</figure><div class="principal-copy"><p>Harshal Shinde studied architecture in Hyderabad before completing his MS Arch at the University of Cincinnati. He worked with Otis Koglin Wilson Architects in Chicago and returned to join Urban Arts in 2001. Since then, his work has included hundreds of turnkey interior projects alongside architecture, adaptive reuse, sustainability, emergency architecture and rapid housing.</p><p>In 2006, Harshal and Anita Shinde began a furniture venture that grew from bespoke work into advanced manufacturing and four retail outlets. Harshal developed a method combining factory-made woodwork with bespoke hand finishing, reducing installation that traditionally took three to four months to approximately two to three weeks. That experience continues to inform the studio: machine precision is used where repetition and control matter; hand skill remains indispensable for fitting, finishing and the particularities of a site.</p><p>Alongside practice, Harshal has served as Director of the JNIAS School of Planning &amp; Architecture at JNAFA University and as a frequent juror at schools of architecture. He was the youngest architect to present a refereed paper at an international conference of the Association of Collegiate Schools of Architecture.</p><p>Photography, travel, writing and painting are not presented as a separate creative persona; they are other ways of looking closely, recording context and testing an idea.</p></div></div></section>
+  <section class="practice-section experience-section"><header><p class="kicker">Project experience</p><h2>A record extending across hundreds of commissions.</h2><p>The selected work pages show projects in depth. The experience register records more of the practice’s breadth while retaining the precise role Urban Arts held in each commission.</p></header><div class="experience-preview"><p>Homes and residential development · Interiors and turnkey delivery · Hospitality, retail and workplaces · Institutional and cultural buildings · Heritage conservation · Urban design and infrastructure</p><a class="button" href="/experience/">View project experience</a></div><p class="client-note"><strong>Selected clients and institutions include</strong> private homeowners and residential developers, South Central Railway, the Government of Telangana, the University of Hyderabad, Brahma Kumaris, Adani Wilmar, MIDHANI and TRIFED.</p></section>
   <section class="practice-section recognition-section"><header><p class="kicker">Recognition</p><h2>Recent awards.</h2></header><div class="awards-grid"><article><time>2021</time><h3>Häfele Kitchen Ideas Design Challenge</h3><p>Open Kitchen, Built Category · Winner, South Zone · Runner-up, All India. Awarded for the design and execution of the Kompally Residence kitchen.</p></article><article><time>2020</time><h3>IGBC Green Champion Award</h3><p>Shanti Sarovar · “Pioneering Institution in Sensitising the Masses by Going Green,” recognising the 35-acre green campus design.</p></article><article><time>2019</time><h3>IIA Madhav Achwal Gold Medal</h3><p>Awarded by the Indian Institute of Architects to Dr Pramod Shinde.</p></article></div></section>
   <section class="approach-section">
     <header class="approach-heading"><p class="kicker">Design approach</p><h2>Every project has a story.</h2><p>Research and collaboration help us discover the most truthful way to tell it.</p></header>
@@ -388,6 +476,23 @@ const practicePage = layout({
     <div class="approach-intro"><p>We look for the project’s DNA: the relationship between its physical and cultural context, the lives it must hold and the means by which it can be made. Research, environmental responsibility, traditional craft and contemporary fabrication are not separate themes; they are resources brought into one line of thought.</p><blockquote>For us, giving form and imparting meaning are intrinsically intertwined.</blockquote></div>
     <div class="approach-steps"><article><span>01</span><h3>Listen</h3><p>Trust and openness come first. We listen for the client’s mission, core values, priorities and constraints before drawing conclusions.</p></article><article><span>02</span><h3>Research &amp; learn</h3><p>We delve into place, precedent, climate, material and use, looking for associations that belong to this project rather than to a generic style.</p></article><article><span>03</span><h3>Distil &amp; decide</h3><p>A fuzzy concept is tested through repeated drawings, models and conversations until the project’s defining idea becomes precise.</p></article><article><span>04</span><h3>Create</h3><p>That storyline becomes a working instrument, guiding decisions from planning and structure to light, furniture, fabrication and the final detail.</p></article></div>
   </section>`,
+});
+
+const experienceCategory = (section, index) => `<section class="experience-category" aria-labelledby="experience-${index + 1}">
+  <header><p class="kicker">${String(index + 1).padStart(2, "0")}</p><h2 id="experience-${index + 1}">${section.title}</h2><p>${section.intro}</p></header>
+  <dl class="experience-list">${section.projects.map(([project, scope]) => `<div><dt>${project}</dt><dd>${scope}</dd></div>`).join("")}</dl>
+</section>`;
+
+const experiencePage = layout({
+  title: "Project Experience · Urban Arts",
+  description: "A selected register of Urban Arts projects across homes, interiors, hospitality, institutions, conservation, planning and urban infrastructure.",
+  current: "practice",
+  className: "experience-page",
+  canonicalPath: "/experience/",
+  body: `<section class="page-hero experience-hero"><p class="kicker">Project experience</p><h1>Nearly five decades, recorded by scope.</h1><p>Representative built, planned and advisory work is organised here by type, with the part Urban Arts was engaged to undertake stated clearly.</p></section>
+  <nav class="experience-index" aria-label="Experience categories">${experienceSections.map((section, index) => `<a href="#experience-${index + 1}"><span>${String(index + 1).padStart(2, "0")}</span>${section.title}</a>`).join("")}</nav>
+  <div class="experience-register">${experienceSections.map(experienceCategory).join("")}</div>
+  <section class="experience-closing"><p>For experience related to a particular building type, location or service, speak to the studio.</p><a class="button" href="/contact/">Discuss a project</a></section>`,
 });
 
 const contactPage = layout({
@@ -446,6 +551,7 @@ await page("index.html", home);
 await page("work/index.html", workPage);
 await page("ongoing/index.html", ongoingPage);
 await page("practice/index.html", practicePage);
+await page("experience/index.html", experiencePage);
 await page("contact/index.html", contactPage);
 for (const p of projects) await page(`projects/${p.slug}/index.html`, projectPage(p));
 await page("404.html", layout({ title: "Page not found · Urban Arts", description: "The page could not be found.", body: '<section class="page-hero"><p class="kicker">404</p><h1>This page has moved.</h1><p><a class="button" href="/work/">View selected work</a></p></section>' }));
@@ -459,6 +565,6 @@ const redirects = {
 for (const [file, destination] of Object.entries(redirects)) await page(file, `<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=${destination}"><link rel="canonical" href="${siteUrl}${destination}"><title>Moved · Urban Arts</title><a href="${destination}">Continue to Urban Arts</a>`);
 
 await page("robots.txt", `User-agent: *\nAllow: /\nSitemap: ${siteUrl}/sitemap.xml\n`);
-const urls = ["/", "/work/", "/practice/", "/contact/", ...projects.map(p => `/projects/${p.slug}/`)];
+const urls = ["/", "/work/", "/ongoing/", "/practice/", "/experience/", "/contact/", ...projects.map(p => `/projects/${p.slug}/`)];
 await page("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(u => `<url><loc>${siteUrl}${u}</loc></url>`).join("")}</urlset>`);
 console.log(`Built ${urls.length} pages in ${out}`);
