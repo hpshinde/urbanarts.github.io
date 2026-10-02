@@ -16,7 +16,8 @@ SIZE = (1200, 630)
 # Homepage/default, Practice, and the lead image of every project page.
 NAMES = [
     "lalitha-04", "practice-model",
-    "amara-01", "thyagraj-01", "mla-01", "ravi-01", "smit-01", "other-res-01",
+    "dukes-office-01",
+    "amara-contemporary-living-03", "thyagraj-01", "mla-01", "ravi-01", "smit-01", "other-res-01",
     "janwada-v2-01", "shanti-model", "atithi-01", "kachiguda-01", "museum-01", "pvnr-01",
 ]
 

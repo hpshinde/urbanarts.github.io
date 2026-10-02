@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 const root = path.dirname(fileURLToPath(import.meta.url));
 const out = path.join(root, "dist");
 const siteUrl = "https://urbanarts.co.in";
-const assetVersion = "20261002-02";
+const assetVersion = "20261002-05";
 const brandTitle = "Urban Arts Architects, Hyderabad";
 const buildDate = new Date().toISOString().slice(0, 10);
 
@@ -89,8 +89,8 @@ const residential = [
     scale: "Four model homes · approx. 2,000–2,200 sq ft each",
     intro: "Four model homes for a 450-unit development at Shamshabad, each designed for a different buyer, and all taken from bare shell to fully furnished, move-in condition in six weeks.",
     note: "A model home has to do more than look finished. It must make an unbuilt life legible, so that a prospective buyer can see how the apartment will actually be lived in.",
-    images: ["amara-01"],
-    alt: ["Model-home living room in muted green"],
+    images: ["amara-contemporary-living-03"],
+    alt: ["Contemporary model-home living room with muted green seating and timber wall panels"],
     chapters: [
       {
         kicker: "Four model homes",
@@ -101,10 +101,12 @@ const residential = [
           "Across all four, furniture, storage, light and circulation are used to make dimensions, movement and daily occupation immediately understandable, rather than merely to stage a photogenic interior."
         ],
         images: [
-          { name: "amara-02", alt: "Dining space beneath a double-height void" },
-          { name: "amara-03", alt: "Neutral bedroom with illuminated wardrobe", portrait: true },
-          { name: "amara-04", alt: "Blue model-home bedroom", portrait: true },
-          { name: "amara-05", alt: "Model-home passage and living room", portrait: true }
+          { name: "amara-contemporary-living-01", alt: "Contemporary model-home living room with green seating, illuminated wall panels and track lighting", portrait: true, caption: "Contemporary model home · Living room" },
+          { name: "amara-contemporary-living-02", alt: "Living room seen through a timber and glass screen", portrait: true, caption: "Contemporary model home · Living room screen" },
+          { name: "amara-contemporary-dining", alt: "Dining area beneath a double-height void beside the open kitchen", portrait: true, caption: "Contemporary model home · Dining" },
+          { name: "amara-contemporary-passage-way", alt: "Passage console with circular mirror and floral arrangement", portrait: true, caption: "Contemporary model home · Passage" },
+          { name: "amara-contemporary-bedroom-01", alt: "Bedroom with an upholstered bed and illuminated glass wardrobes", portrait: true, caption: "Contemporary model home · Bedroom" },
+          { name: "amara-contemporary-bedroom-02", alt: "Second bedroom view with blue wall panels and illuminated wardrobes", portrait: true, caption: "Contemporary model home · Bedroom" }
         ]
       },
       {
@@ -124,6 +126,8 @@ const residential = [
           "Alongside the built homes, Urban Arts developed designs for three further interior styles, shown here as visualisations. They were offered to buyers as interior options, extending the choice beyond the four model homes."
         ],
         images: [],
+        sliderLabel: "Further model-home design visualisations",
+        sliderSuffix: "Design visualisation",
         sliderImages: [
           { name: "amara-render-01", alt: "Visualisation of a light-filled model-home living and dining space", caption: "Living and dining" },
           { name: "amara-render-02", alt: "Visualisation of a child’s bedroom with study and display storage", caption: "Child’s bedroom" },
@@ -285,7 +289,7 @@ const janwadaFarmhouse = {
   eyebrow: "Presently ongoing · Janwada",
   status: "Design development · Construction expected to begin in early 2027",
   location: "Janwada, Hyderabad",
-  client: "Private client",
+  client: "Dukes Realtors",
   role: "Design",
   scope: "Architecture · Interiors · Landscape",
   scale: "3,000 sq yd site",
@@ -324,7 +328,8 @@ const janwadaFarmhouse = {
       kicker: "Presently ongoing",
       title: "Landscape and building, developed together.",
       paragraphs: [
-        "Landscape, water and architecture are being developed together rather than as separate layers, and tested in drawings and visualisations as the design proceeds. The aim is a house that makes its presence felt on arrival, then gradually gives way to shade, water, planting and the rhythms of daily occupation."
+        "Landscape, water and architecture are being developed together rather than as separate layers, and tested in drawings and visualisations as the design proceeds. The aim is a house that makes its presence felt on arrival, then gradually gives way to shade, water, planting and the rhythms of daily occupation.",
+        "Dukes Realtors commissioned the farmhouse following Urban Arts’ design-and-build work on the <a class=\"inline-link\" href=\"/projects/dukes-deevyashakti-office/\">Dukes Deevyashakti Realty Corporate Office</a>."
       ],
       images: [
         { name: "janwada-v2-07", alt: "Bathroom opening to a planted court", portrait: true, caption: "Design visualisation" },
@@ -337,6 +342,66 @@ const janwadaFarmhouse = {
 const ongoing = [janwadaFarmhouse];
 
 const wider = [
+  {
+    slug: "dukes-deevyashakti-office",
+    title: "Dukes Deevyashakti Realty Corporate Office",
+    eyebrow: "Corporate workplace · Design + build · Kokapet, Hyderabad",
+    status: "Completed",
+    year: "2026",
+    location: "Kokapet, Hyderabad",
+    client: "Dukes Deevyashakti Realty (the joint office of Dukes Realtors and Deevyashakti Realty)",
+    role: "Design + build",
+    scope: "Interior architecture · Workplace design · Furniture · Lighting · Electrical and HVAC/services coordination · Ceilings and flooring · Demountable partition system · Turnkey implementation",
+    scale: "9,000 sq ft",
+    programme: "2 weeks design · 10 weeks build",
+    intro: "A 9,000 sq ft shared corporate office for two developers, designed in two weeks and built in ten. Marble floors and vaulted ceilings establish a sense of permanence, while a custom partition system allows the workplace to be taken apart and reorganised.",
+    note: "The workplace was conceived around a productive contradiction: it had to express the solidity expected of two real-estate developers while remaining capable of changing with their organisations.",
+    images: ["dukes-office-01"],
+    alt: ["Reception lounge and café bar at the Dukes Deevyashakti Realty corporate office"],
+    chapters: [
+      {
+        kicker: "Permanence as a brief",
+        title: "An office with the weight of a long-term address.",
+        paragraphs: [
+          "For real-estate developers, the office is also a statement of permanence. The interiors draw on materials and tones associated with durability and long-term value, rather than the lighter, more provisional language of many contemporary offices.",
+          "Marble floors give the principal spaces a deliberate weight. Solid steam-beechwood battens frame warm-toned laminate panels across walls and partitions, and the same tones continue overhead in the ceiling planes. A curving ceiling sweeps over reception and the café bar, while a barrel-vaulted corridor gives circulation an architectural scale. The result feels closer to hospitality than to a conventional commercial fit-out."
+        ],
+        images: [
+          { name: "dukes-office-02", alt: "Reception desk framed by warm timber and a curved ceiling", caption: "Reception" },
+          { name: "dukes-office-03", alt: "Barrel-vaulted corridor with marble floor and timber-framed partitions", caption: "Barrel-vaulted corridor", portrait: true },
+          { name: "dukes-office-04", alt: "Open workplace with glazed cabins and warm timber partitions", caption: "Open workplace" },
+          { name: "dukes-office-05", alt: "Meeting room with timber panelling and a marble-topped table", caption: "Meeting room" }
+        ]
+      },
+      {
+        kicker: "Built to be taken apart",
+        title: "Permanence in character, flexibility in construction.",
+        paragraphs: [
+          "Behind that appearance of permanence is a system designed for change. The timber-and-glass partitions were custom-designed to be fully demountable. Custom-designed brackets accommodate up to three inches of variation in floor-to-ceiling height, allowing a partition to be moved without being remade.",
+          "Cabins, meeting rooms and enclosed workspaces can therefore be reconfigured and reused as the two organisations change, without discarding the elements that give the office its identity."
+        ],
+        images: [],
+        sliderLabel: "Further views of the Dukes Deevyashakti Realty corporate office",
+        sliderImages: [
+          { name: "dukes-office-06", alt: "Glazed demountable partitions enclosing offices beside the open workplace", caption: "Demountable workplace partitions" },
+          { name: "dukes-office-07", alt: "Quiet seating area along the barrel-vaulted corridor", caption: "Corridor seating" },
+          { name: "dukes-office-08", alt: "Principal cabin with layered timber wall panels", caption: "Principal cabin" },
+          { name: "dukes-office-09", alt: "Enclosed office formed with timber-and-glass partitions", caption: "Enclosed workspace" },
+          { name: "dukes-office-10", alt: "Meeting room enclosed by glazed demountable partitions", caption: "Meeting room" }
+        ]
+      },
+      {
+        kicker: "Two weeks to design, ten to build",
+        title: "Design, fabrication and site work moved together.",
+        paragraphs: [
+          "The office was delivered as a single design-and-build commission on a compressed programme: two weeks for design and ten for execution. Architecture, detailing and construction logic had to be developed together from the outset.",
+          "The demountable partitions served both ends. Designed for future change, they were fabricated in Urban Arts’ own factory while work proceeded on site, then installed quickly and precisely. The turnkey scope also included furniture, lighting, electrical work, HVAC and services coordination, ceilings and flooring.",
+          "This commission followed Urban Arts’ work on the <a class=\"inline-link\" href=\"/projects/amara-model-homes/\">Amara Model Homes</a> for Deevyashakti Realty. It was followed in turn by the <a class=\"inline-link\" href=\"/projects/janwada-farmhouse/\">Janwada Farmhouse</a>, commissioned by Dukes Realtors."
+        ],
+        images: []
+      }
+    ]
+  },
   {
     slug: "shanti-sarovar",
     title: "Shanti Sarovar",
@@ -557,6 +622,7 @@ const experienceSections = [
     title: "Hospitality, retail and workplaces",
     intro: "Hotels, restaurants, guest rooms, showrooms and offices developed around operations, guest experience, speed of delivery and the precise scope entrusted to the practice.",
     projects: [
+      ["Dukes Deevyashakti Realty Corporate Office · Kokapet, Hyderabad · 2026", "Interior architecture, workplace design, furniture, lighting, electrical and HVAC/services coordination, ceilings, flooring, custom demountable partition system and turnkey implementation."],
       ["Atithi Inn · Ameerpet, Hyderabad · 2002", "Architecture for guest rooms, banquet and conference halls; interiors, MEP services, custom furniture and furnishings, retrofit of antique elements and project management."],
       ["Ullasa Rooftop Restaurant · Hyderabad", "Architecture, interiors, landscape, furniture and lighting design, custom wall treatments and project management."],
       ["Park Hyatt · Guest Rooms and Public Areas · Hyderabad", "Custom-manufactured furnishings, upholstery, curtains, blinds, wall coverings and selected floor coverings."],
@@ -617,7 +683,9 @@ const experienceSections = [
 ];
 
 const portraitAssets = new Set([
+  "dukes-office-02", "dukes-office-03", "dukes-office-06", "dukes-office-07", "dukes-office-10",
   "amara-01", "amara-02", "amara-03", "amara-04", "amara-05",
+  "amara-contemporary-living-01", "amara-contemporary-living-02", "amara-contemporary-living-03", "amara-contemporary-dining", "amara-contemporary-passage-way", "amara-contemporary-bedroom-01", "amara-contemporary-bedroom-02",
   "atithi-02", "atithi-06", "atithi-07",
   "janwada-03", "janwada-06", "janwada-08", "janwada-09",
   "janwada-v2-06", "janwada-v2-07", "janwada-v2-08", "janwada-v2-09",
@@ -640,8 +708,8 @@ const header = (current = "") => `
   <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span class="sr-only">Menu</span></button>
   <nav id="site-nav" aria-label="Main navigation">
     <a ${current === "work" ? 'aria-current="page"' : ""} href="/work/">Work</a>
-    <a ${current === "record" ? 'aria-current="page"' : ""} href="/project-record/">Project Record</a>
     <a ${current === "ongoing" ? 'aria-current="page"' : ""} href="/ongoing/">Ongoing</a>
+    <a ${current === "record" ? 'aria-current="page"' : ""} href="/project-record/">Project Record</a>
     <a ${current === "practice" ? 'aria-current="page"' : ""} href="/practice/">Practice</a>
     <a ${current === "contact" ? 'aria-current="page"' : ""} href="/contact/">Contact</a>
   </nav>
@@ -697,6 +765,7 @@ const projectCard = (p, index = 0) => `<article class="project-card reveal" styl
 </article>`;
 
 const selectedHomeProjects = [
+  { project: wider.find((p) => p.slug === "dukes-deevyashakti-office"), image: "dukes-office-01", alt: "Reception lounge and café bar at the Dukes Deevyashakti Realty corporate office" },
   { project: residential.find((p) => p.slug === "kompally-residence"), image: "lalitha-04", alt: "Landscaped garden at Kompally Residence" },
   { project: residential.find((p) => p.slug === "brr-residence"), image: "mla-08", alt: "Stone tower and planted courtyard at BRR Residence" },
   { project: residential.find((p) => p.slug === "doctors-residence"), image: "ravi-01", alt: "Warm living room at Doctors’ Residence" },
@@ -724,7 +793,7 @@ const home = layout({
     <div class="project-slider" data-project-slider tabindex="0" aria-label="Selected projects">${selectedHomeProjects.map(sliderCard).join("")}</div>
   </section>
   <section class="home-feature developer-feature">
-    <div class="home-feature-media">${image("amara-01", "Living room at Amara Model Homes")}</div>
+    <div class="home-feature-media">${image("amara-contemporary-living-03", "Contemporary living room at Amara Model Homes")}</div>
     <div class="home-feature-copy"><p class="kicker">For residential developers</p><h2>A model home should make the plan intelligible.</h2><p>We use furniture, light, storage, material and circulation to help prospective residents understand how a home will actually work—not merely how it can be styled for a photograph.</p><a class="text-link" href="/projects/amara-model-homes/">See model-home work</a></div>
   </section>
   <section class="home-feature ongoing-feature">
@@ -775,6 +844,7 @@ const practicePage = layout({
 
 // Project Record names that have their own project page. The first matching prefix links the entry.
 const recordPages = [
+  ["Dukes Deevyashakti Realty Corporate Office", "dukes-deevyashakti-office"],
   ["BRR Residence", "brr-residence"], ["Kompally Residence", "kompally-residence"], ["Amara Model Homes", "amara-model-homes"],
   ["Doctors’ Residence", "doctors-residence"],
   ["Atithi Inn", "atithi-inn"], ["Shanti Sarovar", "shanti-sarovar"], ["AP State Archaeology Museum (now", "state-archaeology-museum"],
@@ -823,7 +893,7 @@ function projectChapters(p) {
   return p.chapters.map((chapter) => {
     const copy = chapter.paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join("");
     const media = chapter.images.map((item) => `<figure class="project-chapter-image ${item.wide ? "chapter-wide" : ""} ${(item.portrait || portraitAssets.has(item.name)) ? "chapter-portrait" : ""}">${image(item.name, item.alt)}${item.caption ? `<figcaption>${item.caption}</figcaption>` : ""}</figure>`).join("");
-    const slider = chapter.sliderImages ? `<div class="chapter-slider selected-work"><div class="slider-actions"><button class="slider-button slider-prev" type="button" aria-label="Show previous visualisation">←</button><button class="slider-button slider-next" type="button" aria-label="Show next visualisation">→</button></div><div class="project-slider" data-project-slider tabindex="0" aria-label="Further model-home design visualisations">${chapter.sliderImages.map((item) => `<figure class="slider-card visualisation-card">${image(item.name, item.alt)}<figcaption>${item.caption} · Design visualisation</figcaption></figure>`).join("")}</div></div>` : "";
+    const slider = chapter.sliderImages ? `<div class="chapter-slider selected-work"><div class="slider-actions"><button class="slider-button slider-prev" type="button" aria-label="Show previous image">←</button><button class="slider-button slider-next" type="button" aria-label="Show next image">→</button></div><div class="project-slider" data-project-slider tabindex="0" aria-label="${chapter.sliderLabel || "Further project images"}">${chapter.sliderImages.map((item) => `<figure class="slider-card visualisation-card">${image(item.name, item.alt)}<figcaption>${item.caption}${chapter.sliderSuffix ? ` · ${chapter.sliderSuffix}` : ""}</figcaption></figure>`).join("")}</div></div>` : "";
     return `<section class="project-chapter"${chapter.id ? ` id="${chapter.id}"` : ""}><div class="project-chapter-copy"><p class="kicker">${chapter.kicker}</p><h2>${chapter.title}</h2><div class="project-chapter-text">${copy}${chapter.quote ? `<blockquote>${chapter.quote}</blockquote>` : ""}</div></div>${media ? `<div class="project-chapter-gallery">${media}</div>` : ""}${slider}</section>`;
   }).join("");
 }
@@ -845,7 +915,7 @@ function projectPage(p) {
     current: "work",
     className: "project-page",
     canonicalPath: `/projects/${p.slug}/`,
-    body: `<article><header class="project-hero"><p class="kicker">${p.eyebrow}</p><h1>${p.title}</h1><p>${p.intro}</p><dl>${factRow("Present name", p.presentName)}${factRow("Status", p.status)}${factRow("Year", p.year)}${factRow("Location", p.location)}${p.client === "Private client" ? "" : factRow("Client", p.client)}${factRow("Urban Arts role", p.role)}${factRow("Scope", p.scope)}${factRow("Scale", p.scale)}${p.award ? `<div class="award-row"><dt>Recognition</dt><dd>${p.award}</dd></div>` : ""}</dl></header><div class="project-lead project-lead-natural ${portraitAssets.has(p.images[0]) ? "project-lead-portrait" : ""}">${image(p.images[0], p.alt[0], true)}</div><section class="project-story"><p class="kicker">Project note</p><p>${p.note}</p></section>${p.chapters ? projectChapters(p) : `<section class="gallery gallery-natural">${gallery}</section>`}<nav class="project-next" aria-label="Project navigation"><a href="/work/">All selected work</a><a href="/contact/">Discuss a project</a></nav></article>`,
+    body: `<article><header class="project-hero"><p class="kicker">${p.eyebrow}</p><h1>${p.title}</h1><p>${p.intro}</p><dl>${factRow("Present name", p.presentName)}${factRow("Status", p.status)}${factRow("Year", p.year)}${factRow("Location", p.location)}${p.client === "Private client" ? "" : factRow("Client", p.client)}${factRow("Urban Arts role", p.role)}${factRow("Scope", p.scope)}${factRow("Scale", p.scale)}${factRow("Programme", p.programme)}${p.award ? `<div class="award-row"><dt>Recognition</dt><dd>${p.award}</dd></div>` : ""}</dl></header><div class="project-lead project-lead-natural ${portraitAssets.has(p.images[0]) ? "project-lead-portrait" : ""}">${image(p.images[0], p.alt[0], true)}</div><section class="project-story"><p class="kicker">Project note</p><p>${p.note}</p></section>${p.chapters ? projectChapters(p) : `<section class="gallery gallery-natural">${gallery}</section>`}<nav class="project-next" aria-label="Project navigation"><a href="/work/">All selected work</a><a href="/contact/">Discuss a project</a></nav></article>`,
   });
 }
 

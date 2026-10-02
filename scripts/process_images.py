@@ -9,6 +9,23 @@ PRINT = Path("/Users/data/Pictures/Portfolio/Print Portfolio Images")
 OLD_SITE = Path("/Users/data/Scripts/urbanarts.co.in/OLD_VERSION/urbanarts.github.io/img/assets")
 
 IMAGES = {
+    "amara-contemporary-living-03": COMPLETED / "Model Flats - Amara Deevyashakti/amara-model-residencee-contemporary-style/amara-contemporary-living_03.png",
+    "amara-contemporary-living-01": COMPLETED / "Model Flats - Amara Deevyashakti/amara-model-residencee-contemporary-style/amara-contemporary-living_01.png",
+    "amara-contemporary-living-02": COMPLETED / "Model Flats - Amara Deevyashakti/amara-model-residencee-contemporary-style/amara-contemporary-living_02.png",
+    "amara-contemporary-dining": COMPLETED / "Model Flats - Amara Deevyashakti/amara-model-residencee-contemporary-style/amara-contemporary-dining.png",
+    "amara-contemporary-passage-way": COMPLETED / "Model Flats - Amara Deevyashakti/amara-model-residencee-contemporary-style/amara-contemporary-passage-way.png",
+    "amara-contemporary-bedroom-01": COMPLETED / "Model Flats - Amara Deevyashakti/amara-model-residencee-contemporary-style/amara-contemporary-bedroom_01.png",
+    "amara-contemporary-bedroom-02": COMPLETED / "Model Flats - Amara Deevyashakti/amara-model-residencee-contemporary-style/amara-contemporary-bedroom_02.png",
+    "dukes-office-01": COMPLETED / "DD-Realty-Corporate-Office/DD-Realty-Corporate-Office_1.png",
+    "dukes-office-02": COMPLETED / "DD-Realty-Corporate-Office/DD-Realty-Corporate-Office_2.png",
+    "dukes-office-03": COMPLETED / "DD-Realty-Corporate-Office/DD-Realty-Corporate-Office_3.png",
+    "dukes-office-04": COMPLETED / "DD-Realty-Corporate-Office/DD-Realty-Corporate-Office_4.png",
+    "dukes-office-05": COMPLETED / "DD-Realty-Corporate-Office/DD-Realty-Corporate-Office_5.png",
+    "dukes-office-06": COMPLETED / "DD-Realty-Corporate-Office/DD-Realty-Corporate-Office_6.png",
+    "dukes-office-07": COMPLETED / "DD-Realty-Corporate-Office/DD-Realty-Corporate-Office_7.png",
+    "dukes-office-08": COMPLETED / "DD-Realty-Corporate-Office/DD-Realty-Corporate-Office_8.png",
+    "dukes-office-09": COMPLETED / "DD-Realty-Corporate-Office/DD-Realty-Corporate-Office_9.png",
+    "dukes-office-10": COMPLETED / "DD-Realty-Corporate-Office/DD-Realty-Corporate-Office_10.png",
     "ravi-01": COMPLETED / "Dr Ravi - Site Photos/Images/DSC00562.jpg",
     "ravi-02": COMPLETED / "Dr Ravi - Site Photos/Images/DSC00588.jpg",
     "ravi-03": COMPLETED / "Dr Ravi - Site Photos/Images/DSC00594.jpg",
@@ -87,6 +104,9 @@ def save_webp(source: Path, target: Path, max_width: int, quality: int) -> None:
 
 out = ROOT / "public/images"
 for name, source in IMAGES.items():
+    if not source.exists() and (out / f"{name}.webp").exists() and (out / f"{name}-small.webp").exists():
+        print(f"kept existing: {name} (archived source no longer on disk)")
+        continue
     save_webp(source, out / f"{name}.webp", 1800, 84)
     save_webp(source, out / f"{name}-small.webp", 900, 80)
     print(name)
