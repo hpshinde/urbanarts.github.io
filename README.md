@@ -262,13 +262,8 @@ The repository’s `origin` is `https://github.com/hpshinde/urbanarts.github.io.
 
 - `source-redesign` contains the editable source.
 - `master` contains the generated contents of `dist/` and is deployed by Hostinger.
-- The rollback tag `pre-redesign-2026-10-01` preserves the version that preceded this redesign.
 
-The earlier website checkout is archived locally at:
-
-`/Users/data/Scripts/urbanarts.co.in/OLD_VERSION/urbanarts.github.io`
-
-Do not edit that archived checkout when updating the current site.
+The earlier website checkout and its rollback tag were removed after the redesigned site was reviewed and verified live on 2 October 2026. Do not recreate an `OLD_VERSION` folder inside this repository. Normal Git history remains available for development history; current website work should always begin from `source-redesign`.
 
 ## If something goes wrong
 
