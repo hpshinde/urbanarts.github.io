@@ -1,0 +1,48 @@
+# Urban Arts — Apache/LiteSpeed rules for Hostinger.
+# GitHub Pages ignores this file. Treat it as inactive until the live
+# response headers confirm it (see CHANGES.md, "After deploying").
+
+Options -MultiViews
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# 1. www → apex. (HTTPS is left to hPanel's "Force HTTPS" setting: behind
+#    Hostinger's CDN, an %{HTTPS} test here can cause a redirect loop.)
+RewriteCond %{HTTP_HOST} ^www\.urbanarts\.co\.in$ [NC]
+RewriteRule ^(.*)$ https://urbanarts.co.in/$1 [R=301,L]
+
+# 2. Retired addresses from the previous site.
+RewriteRule ^about\.html$ /practice/ [R=301,L]
+RewriteRule ^about-(deoyani|harshal|pramod)-shinde\.html$ /practice/ [R=301,L]
+RewriteRule ^approach\.html$ /practice/ [R=301,L]
+RewriteRule ^contact\.html$ /contact/ [R=301,L]
+RewriteRule ^type-(housing|interiors)\.html$ /work/#residential [R=301,L,NE]
+RewriteRule ^type-(conservation|institutional|urban-design|hospitality|retail)\.html$ /work/#wider-practice [R=301,L,NE]
+RewriteRule ^type-furniture\.html$ /work/ [R=301,L]
+RewriteRule ^project-institutional-shanti-sarovar\.html$ /projects/shanti-sarovar/ [R=301,L]
+
+# 3. Addresses renamed after launch.
+RewriteRule ^experience(/.*)?$ /project-record/ [R=301,L]
+RewriteRule ^projects/thyagraj-residence(/.*)?$ /projects/thyagaraj-residence/ [R=301,L]
+RewriteRule ^projects/ravi-residence(/.*)?$ /projects/doctors-residence/ [R=301,L]
+</IfModule>
+
+# 4. Caching. HTML is always revalidated, so a new homepage is seen at once.
+#    CSS and JS are versioned (?v=) and can be cached for a year. Images are
+#    not versioned, so they are cached for a week only.
+<IfModule mod_headers.c>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(webp|jpg|jpeg|png|svg|ico)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+  <FilesMatch "\.(woff2?|ttf|otf)$">
+    Header set Cache-Control "public, max-age=31536000"
+  </FilesMatch>
+</IfModule>
